@@ -34,5 +34,16 @@
       },
       "system": "pf2e"
     }
+  ],
+  "packFolders":[
+    {
+      "name":"Birreria dei Mostri",
+      "sorting":"a",
+      "packs":[
+        "creatures",
+        "effects"
+      ],
+      "color":null
+    }
   ]
 }
