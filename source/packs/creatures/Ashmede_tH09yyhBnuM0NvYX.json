@@ -1,0 +1,1569 @@
+{
+	"folder": "FUvLmndulCiBj5TR",
+	"name": "Ashmede",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 2,
+		"width": 2,
+		"name": "Ashmede",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 10,
+				"temp": 0,
+				"max": 10,
+				"details": ""
+			},
+			"ac": {
+				"value": 32,
+				"details": ""
+			},
+			"allSaves": {
+				"value": "+1 Status to All Saves vs. Magic"
+			},
+			"speed": {
+				"value": 30,
+				"otherSpeeds": [
+					{
+						"type": "fly",
+						"value": 60
+					}
+				],
+				"details": ""
+			},
+			"immunities": [
+				{
+					"type": "fire",
+					"exceptions": []
+				}
+			],
+			"weaknesses": [
+				{
+					"type": "holy",
+					"value": 15,
+					"exceptions": []
+				}
+			],
+			"resistances": [
+				{
+					"type": "physical",
+					"value": 8,
+					"exceptions": [
+						"silver"
+					],
+					"doubleVs": []
+				},
+				{
+					"type": "poison",
+					"value": 10,
+					"exceptions": [],
+					"doubleVs": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [
+					"diabolic"
+				],
+				"details": ""
+			},
+			"level": {
+				"value": 12
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"abilities": {
+			"str": {
+				"mod": 5
+			},
+			"dex": {
+				"mod": 4
+			},
+			"con": {
+				"mod": 5
+			},
+			"int": {
+				"mod": 5
+			},
+			"wis": {
+				"mod": 4
+			},
+			"cha": {
+				"mod": 4
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 22,
+			"senses": [
+				{
+					"type": "greater-darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 19,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 22,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 25,
+				"saveDetail": ""
+			}
+		},
+		"skills": {
+			"intimidation": {
+				"base": 25,
+				"special": []
+			},
+			"stealth": {
+				"base": 22,
+				"special": []
+			}
+		},
+		"traits": {
+			"value": [
+				"devil",
+				"fiend",
+				"unholy"
+			],
+			"rarity": "rare",
+			"size": {
+				"value": "lg"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"name": "Greater Darkvision",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "greater-darkvision",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 250000,
+			"flags": {},
+			"_id": "K0LGvTYA9txVYKXF",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.K0LGvTYA9txVYKXF"
+		},
+		{
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"name": "Frightful Presence",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>20 feet. @Check[will|dc:29|options:area-effect,inflicts:frightened]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "Aura",
+						"radius": 0,
+						"slug": "frightful-presence",
+						"traits": [
+							"emotion",
+							"fear",
+							"mental"
+						]
+					}
+				],
+				"traits": {
+					"value": [
+						"aura",
+						"emotion",
+						"fear",
+						"mental"
+					],
+					"otherTags": []
+				},
+				"slug": "frightful-presence",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 300000,
+			"flags": {},
+			"_id": "MiAvGuHAPU16S2zK",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.MiAvGuHAPU16S2zK"
+		},
+		{
+			"type": "melee",
+			"name": "Scythe",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"deadly-d10",
+						"magical",
+						"reach-10",
+						"spirit",
+						"trip",
+						"unholy"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"NApLvyOU556uo486": {
+						"damage": "2d10+14",
+						"damageType": "slashing",
+						"category": null
+					},
+					"wp4iAHg8EQpCHBf6": {
+						"damage": "1d10",
+						"damageType": "spirit",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 26
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "V1j9qqSpXkTOiz9m",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.V1j9qqSpXkTOiz9m"
+		},
+		{
+			"type": "melee",
+			"name": "Wing",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"magical",
+						"reach-10",
+						"unarmed",
+						"unholy"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"oo5XMx8V6cqDQMwm": {
+						"damage": "3d10+14",
+						"damageType": "bludgeoning",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 26
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "LuGBrtZYgAYQEIqP",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.LuGBrtZYgAYQEIqP"
+		},
+		{
+			"name": "Divine Innate Spells",
+			"type": "spellcastingEntry",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": ""
+				},
+				"rules": [],
+				"slug": null,
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null
+				},
+				"traits": {
+					"otherTags": []
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"ability": {
+					"value": "cha"
+				},
+				"spelldc": {
+					"value": 21,
+					"dc": 29
+				},
+				"tradition": {
+					"value": "divine"
+				},
+				"prepared": {
+					"value": "innate"
+				},
+				"showSlotlessLevels": {
+					"value": false
+				},
+				"proficiency": {
+					"value": 1
+				},
+				"slots": {
+					"slot0": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot1": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot2": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot3": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot4": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot5": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot6": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot7": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot8": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot9": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot10": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot11": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					}
+				},
+				"autoHeightenLevel": {
+					"value": null
+				}
+			},
+			"_id": "OctCYEp5UHO40EFx",
+			"img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.OctCYEp5UHO40EFx"
+		},
+		{
+			"folder": "xqlqJ6eeiNtWb7bq",
+			"img": "systems/pf2e/icons/spells/force-cage.webp",
+			"name": "Lifewood Cage",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>You create an immobile, @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} prison of hardened wood suffused with vital energy from the Forge of Creation. The cage is a 20-foot cube made of wooden branches, each a half inch thick and a half inch apart. Each creature in the area where you create the cage must attempt a Reflex save. If such a creature fails, it becomes trapped inside the cage. If it succeeds, it's pushed outside the cage into a space of its choice. If a creature in the area is too big to fit inside the prison, the spell automatically fails.</p>\n<p>The cage has AC 10, Hardness 20, and 40 Hit Points, and it's immune to critical hits and precision damage, though it has weakness 5 to void damage. A creature capable of passing through the space between the bars (typically a Tiny creature) can leave; all others are confined within. The vitality energy suffusing the wood prevents incorporeal undead creatures from passing through the beams. Attacks with a weapon too large to fit between the bars can't pass through the cage, and the bars provide standard cover even against attacks that can pass through the gaps. Spells and most area effects (such as dragon breath) can pass through the cage uninhibited.</p>"
+				},
+				"rules": [],
+				"slug": "lifewood-cage",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate",
+						"manipulate",
+						"vitality",
+						"wood"
+					],
+					"rarity": "common",
+					"traditions": [
+						"arcane",
+						"primal"
+					]
+				},
+				"publication": {
+					"title": "Pathfinder Player Core 2",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 7
+				},
+				"requirements": "",
+				"target": {
+					"value": ""
+				},
+				"range": {
+					"value": "30 feet; 1 cube 20 feet on each side"
+				},
+				"area": {
+					"type": "cube",
+					"value": 20
+				},
+				"time": {
+					"value": "3"
+				},
+				"duration": {
+					"value": "1 minute",
+					"sustained": true
+				},
+				"damage": {},
+				"defense": {
+					"save": {
+						"basic": false,
+						"statistic": "reflex"
+					}
+				},
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": "OctCYEp5UHO40EFx"
+				},
+				"counteraction": false
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.HES5jvGiNZZnJycK",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "xjthtu4DMElQ8c5t",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.xjthtu4DMElQ8c5t"
+		},
+		{
+			"folder": "7cyoYPoPYA01mErU",
+			"img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+			"name": "Translocate",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>"
+				},
+				"rules": [],
+				"slug": "translocate",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate",
+						"manipulate",
+						"teleportation"
+					],
+					"rarity": "common",
+					"traditions": [
+						"arcane",
+						"occult"
+					]
+				},
+				"publication": {
+					"title": "Pathfinder Player Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 4
+				},
+				"requirements": "",
+				"target": {
+					"value": ""
+				},
+				"range": {
+					"value": "120 feet"
+				},
+				"area": null,
+				"time": {
+					"value": "2"
+				},
+				"duration": {
+					"value": "",
+					"sustained": false
+				},
+				"damage": {},
+				"defense": null,
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": "OctCYEp5UHO40EFx",
+					"heightenedLevel": 5
+				},
+				"counteraction": false,
+				"heightening": {
+					"levels": {
+						"5": {
+							"range": {
+								"value": "1 mile"
+							}
+						}
+					},
+					"type": "fixed"
+				}
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "dC91VhtL99563bk5",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.dC91VhtL99563bk5"
+		},
+		{
+			"folder": "7cyoYPoPYA01mErU",
+			"img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+			"name": "Translocate (At Will)",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>"
+				},
+				"rules": [],
+				"slug": "translocate",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate",
+						"manipulate",
+						"teleportation"
+					],
+					"rarity": "common",
+					"traditions": [
+						"arcane",
+						"occult"
+					]
+				},
+				"publication": {
+					"title": "Pathfinder Player Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 4
+				},
+				"requirements": "",
+				"target": {
+					"value": ""
+				},
+				"range": {
+					"value": "120 feet"
+				},
+				"area": null,
+				"time": {
+					"value": "2"
+				},
+				"duration": {
+					"value": "",
+					"sustained": false
+				},
+				"damage": {},
+				"defense": null,
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": "OctCYEp5UHO40EFx",
+					"heightenedLevel": 4
+				},
+				"counteraction": false,
+				"heightening": {
+					"levels": {
+						"5": {
+							"range": {
+								"value": "1 mile"
+							}
+						}
+					},
+					"type": "fixed"
+				}
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "OBGh9bPtGK2RW8JC",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.OBGh9bPtGK2RW8JC"
+		},
+		{
+			"folder": "lPzcDrjGDFbzuF2r",
+			"img": "icons/creatures/magical/construct-stone-earth-gray.webp",
+			"name": "Invisibility",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>Illusions bend light around the target, rendering it @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible}. This makes it @UUID[Compendium.pf2e.conditionitems.Item.VRSef5y1LmL2Hkjf]{Undetected} to all creatures, though the creatures can attempt to find the target, making it @UUID[Compendium.pf2e.conditionitems.Item.iU0fEDdBp3rXpTMC]{Hidden} to them instead. If the target uses a hostile action, the spell ends after that hostile action is completed.</p>\n<hr />\n<p><strong>Heightened (4th)</strong> The spell lasts 1 minute, but it doesn't end if the target uses a hostile action.</p>"
+				},
+				"rules": [],
+				"slug": "invisibility",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"illusion",
+						"manipulate",
+						"subtle"
+					],
+					"rarity": "common",
+					"traditions": [
+						"arcane",
+						"occult"
+					]
+				},
+				"publication": {
+					"title": "Pathfinder Player Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 2
+				},
+				"requirements": "",
+				"target": {
+					"value": "1 creature"
+				},
+				"range": {
+					"value": "touch"
+				},
+				"area": null,
+				"time": {
+					"value": "2"
+				},
+				"duration": {
+					"value": "10 minutes",
+					"sustained": false
+				},
+				"damage": {},
+				"defense": null,
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": "OctCYEp5UHO40EFx",
+					"heightenedLevel": 4,
+					"uses": {
+						"max": 3,
+						"value": 3
+					}
+				},
+				"counteraction": false
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.XXqE1eY3w3z6xJCB",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "eI1pBEWomtbKV8WW",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.eI1pBEWomtbKV8WW"
+		},
+		{
+			"folder": "lPzcDrjGDFbzuF2r",
+			"img": "systems/pf2e/icons/spells/dispel-magic.webp",
+			"name": "Dispel Magic",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>You unravel the magic behind a spell or effect. Attempt a counteract check against the target. If you successfully counteract a magic item, the item becomes a mundane item of its type for 10 minutes. This doesn't change the item's non-magical properties. If the target is an artifact or similar item, you automatically fail.</p>"
+				},
+				"rules": [],
+				"slug": "dispel-magic",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate",
+						"manipulate"
+					],
+					"rarity": "common",
+					"traditions": [
+						"arcane",
+						"divine",
+						"occult",
+						"primal"
+					]
+				},
+				"publication": {
+					"title": "Pathfinder Player Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 2
+				},
+				"requirements": "",
+				"target": {
+					"value": "1 spell effect or unattended magic item"
+				},
+				"range": {
+					"value": "120 feet"
+				},
+				"area": null,
+				"time": {
+					"value": "2"
+				},
+				"duration": {
+					"value": "",
+					"sustained": false
+				},
+				"damage": {},
+				"defense": null,
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": "OctCYEp5UHO40EFx",
+					"heightenedLevel": 3,
+					"uses": {
+						"max": 3,
+						"value": 3
+					}
+				},
+				"counteraction": true
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.9HpwDN4MYQJnW0LG",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "8FIg8G6RdXwiav5i",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.8FIg8G6RdXwiav5i"
+		},
+		{
+			"folder": "D7UVaOiB40wTR6kv",
+			"img": "systems/pf2e/icons/spells/detect-magic.webp",
+			"name": "Detect Magic",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>You send out a pulse that registers the presence of magic. You receive no information beyond the presence or absence of magic. You can choose to ignore magic you're fully aware of, such as the magic items and ongoing spells of you and your allies. You detect illusion magic only if that magic's effect has a lower rank than the rank of your <em>detect magic</em> spell. However, items that have an illusion aura but aren't deceptive in appearance (such as an <em>invisibility potion</em>) typically are detected normally.</p><hr /><p><strong>Heightened (3rd)</strong> You learn the rank or level of the most powerful magical effect the spell detects, as determined by the GM.</p>\n<p><strong>Heightened (4th)</strong> As 3rd rank, but you also pinpoint the source of the highest-rank magic. Like for an imprecise sense, you don't learn the exact location, but can narrow down the source to within a 5-foot cube (or the nearest if larger than that).</p>"
+				},
+				"rules": [],
+				"slug": "detect-magic",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"cantrip",
+						"concentrate",
+						"detection",
+						"manipulate"
+					],
+					"rarity": "common",
+					"traditions": [
+						"arcane",
+						"divine",
+						"occult",
+						"primal"
+					]
+				},
+				"publication": {
+					"title": "Pathfinder Player Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 1
+				},
+				"requirements": "",
+				"target": {
+					"value": ""
+				},
+				"range": {
+					"value": ""
+				},
+				"area": {
+					"type": "emanation",
+					"value": 30
+				},
+				"time": {
+					"value": "2"
+				},
+				"duration": {
+					"value": "",
+					"sustained": false
+				},
+				"damage": {},
+				"defense": null,
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": "OctCYEp5UHO40EFx"
+				},
+				"counteraction": false
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.gpzpAAAJ1Lza2JVl",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "2kq4EvsSqFT9WONl",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.2kq4EvsSqFT9WONl"
+		},
+		{
+			"folder": "D7UVaOiB40wTR6kv",
+			"img": "icons/magic/light/explosion-star-glow-silhouette.webp",
+			"name": "Read Aura",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>You focus on the target object, opening your mind to perceive magical auras. When the casting is complete, you know whether that item is magical. You or anyone you advise about the aura gains a +2 circumstance bonus to @UUID[Compendium.pf2e.actionspf2e.Item.eReSHVEPCsdkSL4G]{Identify Magic} on the item. If the object is illusory, you detect this only if the effect's rank is lower than the rank of your <em>read aura</em> spell.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.J6OhRNSN23KzOPRL]{Spell Effect: Read Aura}</p><hr /><p><strong>Heightened (3rd)</strong> You can target up to 10 objects.</p>\n<p><strong>Heightened (6th)</strong> You can target any number of objects.</p>"
+				},
+				"rules": [],
+				"slug": "read-aura",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"cantrip",
+						"concentrate",
+						"detection",
+						"manipulate"
+					],
+					"rarity": "common",
+					"traditions": [
+						"arcane",
+						"divine",
+						"occult",
+						"primal"
+					]
+				},
+				"publication": {
+					"title": "Pathfinder Player Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 1
+				},
+				"requirements": "",
+				"target": {
+					"value": "1 object"
+				},
+				"range": {
+					"value": "30 feet"
+				},
+				"area": null,
+				"time": {
+					"value": "1 minute"
+				},
+				"duration": {
+					"value": "",
+					"sustained": false
+				},
+				"damage": {},
+				"defense": null,
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": "OctCYEp5UHO40EFx"
+				},
+				"counteraction": false,
+				"heightening": {
+					"levels": {
+						"3": {
+							"target": {
+								"value": "10 objects"
+							}
+						},
+						"6": {
+							"target": {
+								"value": "any number of objects"
+							}
+						}
+					},
+					"type": "fixed"
+				}
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.OhD2Z6rIGGD5ocZA",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "YF1fzX5XxwZhRUNr",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.YF1fzX5XxwZhRUNr"
+		},
+		{
+			"folder": "6JF73zNhT8zbp1qC",
+			"img": "systems/pf2e/icons/spells/infernal-pact.webp",
+			"name": "Diabolic Pact",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>You make an appeal to a powerful devil, asking them to bind some of their subordinates to your service. If you succeed, the devil sends you their choice of one devil of level 2 or lower, two devils of level 0 or lower, or three devils of level –1 or lower.</p><hr /><p><strong>Critical Success</strong> The devils are sent to you and serve you for [[/gmr 1d4 #Weeks]]{1d4 weeks}.</p>\n<p><strong>Success</strong> The devils are sent to you and serve you for [[/gmr 1d4 #Days]]{1d4 days}.</p>\n<p><strong>Failure</strong> Your request is denied.</p>\n<p><strong>Critical Failure</strong> Not only is your request denied, but the powerful devil sends word of its displeasure to your master.</p><hr /><p><strong>Heightened (+1)</strong> Increase the level of devil sent to you by 2 for each option.</p>"
+				},
+				"rules": [],
+				"slug": "diabolic-pact",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"unholy"
+					],
+					"rarity": "uncommon",
+					"traditions": []
+				},
+				"publication": {
+					"title": "Pathfinder Monster Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 1
+				},
+				"requirements": "",
+				"target": {
+					"value": ""
+				},
+				"range": {
+					"value": ""
+				},
+				"area": null,
+				"time": {
+					"value": "1 day"
+				},
+				"duration": {
+					"value": "",
+					"sustained": false
+				},
+				"damage": {},
+				"defense": null,
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": null
+				},
+				"counteraction": false,
+				"ritual": {
+					"primary": {
+						"check": "Religion (expert; you must be a devil)"
+					},
+					"secondary": {
+						"casters": 0,
+						"checks": ""
+					}
+				}
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.30BBep9U4BDV0EgQ",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "Q1uVdR3lJyr55UWN",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.Q1uVdR3lJyr55UWN"
+		},
+		{
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"name": "At-Will Spells",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "at-will-spells",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 200000,
+			"flags": {},
+			"_id": "0fdWVWGCBW0PjntA",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.0fdWVWGCBW0PjntA"
+		},
+		{
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"name": "+1 Status to All Saves vs. Magic",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "FlatModifier",
+						"predicate": [
+							"item:magical"
+						],
+						"selector": "saving-throw",
+						"type": "status",
+						"value": 1
+					}
+				],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "1-status-to-all-saves-vs-magic",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 100000,
+			"flags": {},
+			"_id": "vqTe1jVDxgfCWAzz",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.vqTe1jVDxgfCWAzz"
+		},
+		{
+			"type": "action",
+			"name": "Herald of Asmodeus",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The ashmede orders all creatures in a @Template[emanation|distance:30] to kneel in front of the herald of the King of Hell. All affected creatures must attempt at a @Check[will|dc:29] save or kneel down, becoming @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone}. Creatures with the devil trait or followers of Asmodeus considers the result as one degree worse. The ashmede can't use Herald of Asmodeus again for [[/gmr 1d4 #Duration]]{1d4 rounds}.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"auditory",
+						"mental",
+						"visual"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": 3
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "vR83cy1KiIc6tVY3",
+			"img": "systems/pf2e/icons/actions/ThreeActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!tH09yyhBnuM0NvYX.vR83cy1KiIc6tVY3"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.73o2iexjm3Q5Kz5A",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116958373,
+		"modifiedTime": 1776116958373,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "tH09yyhBnuM0NvYX",
+	"sort": 0,
+	"_key": "!actors!tH09yyhBnuM0NvYX"
+}

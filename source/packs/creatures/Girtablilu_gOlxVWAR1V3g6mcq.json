@@ -1,0 +1,1753 @@
+{
+	"folder": "4fgENENR96vhokBj",
+	"name": "Girtablilu",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": false
+			},
+			"wall-height": {
+				"tokenHeight": 0
+			},
+			"tagger": {},
+			"Rideable": {
+				"issetRideableFlag": true,
+				"MaxRiderFlag": null,
+				"CustomRidingheightFlag": null,
+				"UseRidingHeightFlag": true,
+				"RiderPositioningFlag": "RowPlacement",
+				"TokenFormFlag": "TokenFormCircle",
+				"InsideMovementFlag": false,
+				"SpawnRidersFlag": "",
+				"MountingEffectsFlag": "",
+				"WorldMEffectOverrideFlag": false,
+				"SelfApplyEffectsFlag": false,
+				"forMountEffectsFlag": "",
+				"canbeGrappledFlag": true,
+				"CanbePilotedFlag": false,
+				"RidersScaleFlag": 1,
+				"PilotedbyDefaultFlag": false,
+				"RiderOffsetFlag": [
+					0,
+					0
+				],
+				"CheckPilotedCollisionFlag": false
+			},
+			"LocknKey": {
+				"LPFormulaFlag": "",
+				"LPFormulaOverrideFlag": false,
+				"LBFormulaFlag": "",
+				"LBFormulaOverrideFlag": false,
+				"PickPocketFormulaFlag": "",
+				"PickPocketFormulaOverrideFlag": false,
+				"PickPocketDCFlag": null,
+				"MATTTriggerTileFlag": "",
+				"MATTTriggerConditionsFlag": {
+					"LockuseKey": "never",
+					"LockusePasskey": "never",
+					"LockusePick": "never",
+					"LockuseBreak": "never",
+					"LockuseFree": "never",
+					"UsePickPocket": "never"
+				},
+				"LootFormulaFlag": ""
+			},
+			"patrol": {
+				"enablePatrol": false,
+				"enableSpotting": false,
+				"makePatroller": false,
+				"multiPath": false,
+				"patrolPathName": "",
+				"pathNodeIndex": "0"
+			},
+			"barbrawl": {
+				"resourceBars": {
+					"bar1": {
+						"order": 0,
+						"id": "bar1",
+						"attribute": "attributes.hp",
+						"mincolor": "#FF0000",
+						"maxcolor": "#80FF00",
+						"position": "bottom-inner",
+						"otherVisibility": 0,
+						"ownerVisibility": 50,
+						"gmVisibility": -1,
+						"hideFull": false,
+						"hideEmpty": false,
+						"hideCombat": false,
+						"hideNoCombat": false,
+						"indentLeft": null,
+						"indentRight": null,
+						"shareHeight": false,
+						"style": "user",
+						"label": "",
+						"invert": false,
+						"invertDirection": false,
+						"subdivisions": null,
+						"subdivisionsOwner": false,
+						"fgImage": "",
+						"bgImage": "",
+						"opacity": null,
+						"max": null,
+						"hideHud": false
+					},
+					"bar2": {
+						"order": 1,
+						"id": "bar2",
+						"attribute": "attributes.ac.value",
+						"mincolor": "#000080",
+						"maxcolor": "#80B3FF",
+						"position": "top-inner",
+						"otherVisibility": 0,
+						"ownerVisibility": 50,
+						"gmVisibility": -1,
+						"hideFull": false,
+						"hideEmpty": false,
+						"hideCombat": false,
+						"hideNoCombat": false,
+						"indentLeft": null,
+						"indentRight": null,
+						"shareHeight": false,
+						"style": "user",
+						"label": "",
+						"invert": false,
+						"invertDirection": false,
+						"subdivisions": null,
+						"subdivisionsOwner": false,
+						"fgImage": "",
+						"bgImage": "",
+						"opacity": null,
+						"max": null,
+						"hideHud": false
+					}
+				}
+			},
+			"tokencover": {
+				"maximumCoverGrant": 1
+			},
+			"monks-enhanced-journal": {
+				"chatbubble": ""
+			},
+			"flying-tokens": {
+				"altToken": ""
+			},
+			"splatter": {
+				"bloodColor": ""
+			},
+			"core": {},
+			"monks-bloodsplats": {
+				"bloodsplat-type": "",
+				"bloodsplat-colour": ""
+			}
+		},
+		"height": 2,
+		"width": 2,
+		"name": "Girtablilu",
+		"displayName": 0,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1.2,
+			"scaleY": 1.2,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": false,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 50,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": "attributes.ac.value"
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": true,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [
+			{
+				"id": "basicSight",
+				"range": 0,
+				"enabled": true
+			}
+		],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 0,
+			"subject": {
+				"scale": 1,
+				"texture": "worlds/De Terra Antiqua/Creature/Nefandus/Dynamic Token/Girtablilu.webp"
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 100,
+				"temp": 0,
+				"max": 100,
+				"details": ""
+			},
+			"ac": {
+				"value": 24,
+				"details": ""
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 30,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"weaknesses": [
+				{
+					"type": "holy",
+					"value": 9,
+					"exceptions": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [
+					"chthonian",
+					"common"
+				],
+				"details": ""
+			},
+			"level": {
+				"value": 6
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": {
+				"schema": 0.932,
+				"foundry": "13.351",
+				"system": "7.11.3"
+			}
+		},
+		"abilities": {
+			"str": {
+				"mod": 5
+			},
+			"dex": {
+				"mod": 4
+			},
+			"con": {
+				"mod": 4
+			},
+			"int": {
+				"mod": 4
+			},
+			"wis": {
+				"mod": 4
+			},
+			"cha": {
+				"mod": 4
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 14,
+			"senses": [
+				{
+					"type": "greater-darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 17,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 12,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 14,
+				"saveDetail": ""
+			}
+		},
+		"skills": {
+			"athletics": {
+				"base": 11
+			},
+			"stealth": {
+				"base": 15
+			}
+		},
+		"traits": {
+			"value": [
+				"chaotic",
+				"evil",
+				"fiend",
+				"unholy"
+			],
+			"rarity": "rare",
+			"size": {
+				"value": "lg"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"name": "Claw",
+			"type": "melee",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": ""
+				},
+				"rules": [],
+				"slug": null,
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"magical",
+						"reach-10",
+						"unarmed",
+						"unholy"
+					],
+					"config": {}
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"damageRolls": {
+					"0": {
+						"damage": "2d8+9",
+						"damageType": "piercing",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 15
+				},
+				"attackEffects": {
+					"value": [
+						"grab"
+					]
+				},
+				"action": "strike",
+				"area": null,
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "WMyqThvuzqXhFszS",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {
+				"scene-packer": {
+					"hash": "7089ae5c3317ce17ff929b7dbbeec3257ff05212"
+				},
+				"aoe-easy-resolve": {
+					"ignoreAoE": false,
+					"useOverride": false,
+					"provideTemplate": false,
+					"saveType": "reflex",
+					"saveDC": null,
+					"useCustomDamage": false,
+					"customDamage": "",
+					"customDamageType": "",
+					"multipliers": {
+						"criticalSuccess": 0,
+						"success": 0.5,
+						"failure": 1,
+						"criticalFailure": 2
+					}
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.WMyqThvuzqXhFszS"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Greater Darkvision",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.GreaterDarkvision]</p>"
+				},
+				"rules": [],
+				"slug": "greater-darkvision",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"publication": {
+					"title": "Pathfinder Bestiary",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"actionType": {
+					"value": "passive"
+				},
+				"category": "interaction",
+				"actions": {
+					"value": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"flags": {
+				"core": {},
+				"scene-packer": {
+					"hash": "ea225d8513912c3732a84f87f724b930e6534b5a"
+				}
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 200000,
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.4Ho2xMPEC05aSxzr",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"_id": "jtWBw6JepOUfr59O",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.jtWBw6JepOUfr59O"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/core/icons/weapons/bows/longbow-recurve-leather-brown.webp",
+			"name": "Longbow",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>This 5-foot-tall bow, usually made of a single piece of elm, hickory, or yew, has a powerful draw and is excellent at propelling arrows with great force and at an extreme distance. You must use two hands to fire a longbow, and it can't be used while mounted.</p>"
+				},
+				"rules": [],
+				"slug": "longbow",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"deadly-d10",
+						"volley-30"
+					],
+					"rarity": "common"
+				},
+				"publication": {
+					"title": "Pathfinder Core Rulebook",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"level": {
+					"value": 0
+				},
+				"quantity": 1,
+				"baseItem": "longbow",
+				"bulk": {
+					"value": 2
+				},
+				"hp": {
+					"value": 0,
+					"max": 0
+				},
+				"hardness": 0,
+				"price": {
+					"value": {
+						"gp": 6
+					}
+				},
+				"equipped": {
+					"carryType": "worn",
+					"invested": null,
+					"handsHeld": 0
+				},
+				"containerId": null,
+				"size": "lg",
+				"material": {
+					"type": null,
+					"grade": null
+				},
+				"identification": {
+					"status": "identified",
+					"unidentified": {
+						"name": "",
+						"img": "",
+						"data": {
+							"description": {
+								"value": ""
+							}
+						}
+					},
+					"misidentified": {}
+				},
+				"usage": {
+					"value": "held-in-one-plus-hands"
+				},
+				"category": "martial",
+				"group": "bow",
+				"bonus": {
+					"value": 0
+				},
+				"damage": {
+					"dice": 1,
+					"die": "d8",
+					"damageType": "piercing",
+					"persistent": null
+				},
+				"splashDamage": {
+					"value": 0
+				},
+				"range": 100,
+				"expend": 1,
+				"ammo": {
+					"capacity": null,
+					"baseType": "arrows",
+					"builtIn": false
+				},
+				"reload": {
+					"value": "0"
+				},
+				"grade": null,
+				"runes": {
+					"potency": 0,
+					"striking": 0,
+					"property": []
+				},
+				"specific": null,
+				"subitems": [],
+				"bonusDamage": {
+					"value": 0
+				},
+				"property1": {
+					"value": "",
+					"dice": 0,
+					"die": "",
+					"damageType": "",
+					"critDice": 0,
+					"critDie": "",
+					"critDamage": "",
+					"critDamageType": ""
+				}
+			},
+			"type": "weapon",
+			"flags": {
+				"core": {},
+				"scene-packer": {
+					"hash": "a81010ddc246b229801d650eeb291580c3ffb013"
+				}
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.equipment-srd.Item.MVAWttmT0QDa7LsV",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"_id": "v7SzojYUtPBGGU2L",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.v7SzojYUtPBGGU2L"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/core/icons/weapons/polearms/spear-simple-engraved.webp",
+			"name": "Longspear",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>This very long spear, sometimes called a pike, is purely for thrusting rather than throwing. Used by many soldiers and city watch for crowd control and defense against charging enemies, it must be wielded with two hands.</p>"
+				},
+				"rules": [],
+				"slug": "longspear",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"reach"
+					],
+					"rarity": "common"
+				},
+				"publication": {
+					"title": "Pathfinder Core Rulebook",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"level": {
+					"value": 0
+				},
+				"quantity": 1,
+				"baseItem": "longspear",
+				"bulk": {
+					"value": 2
+				},
+				"hp": {
+					"value": 0,
+					"max": 0
+				},
+				"hardness": 0,
+				"price": {
+					"value": {
+						"sp": 5
+					}
+				},
+				"equipped": {
+					"carryType": "worn",
+					"invested": null,
+					"handsHeld": 0
+				},
+				"containerId": null,
+				"size": "lg",
+				"material": {
+					"type": null,
+					"grade": null
+				},
+				"identification": {
+					"status": "identified",
+					"unidentified": {
+						"name": "",
+						"img": "",
+						"data": {
+							"description": {
+								"value": ""
+							}
+						}
+					},
+					"misidentified": {}
+				},
+				"usage": {
+					"value": "held-in-two-hands"
+				},
+				"category": "simple",
+				"group": "spear",
+				"bonus": {
+					"value": 0
+				},
+				"damage": {
+					"dice": 1,
+					"die": "d8",
+					"damageType": "piercing",
+					"persistent": null
+				},
+				"splashDamage": {
+					"value": 0
+				},
+				"range": null,
+				"expend": null,
+				"ammo": null,
+				"reload": {
+					"value": null
+				},
+				"grade": null,
+				"runes": {
+					"potency": 0,
+					"striking": 0,
+					"property": []
+				},
+				"specific": null,
+				"subitems": [],
+				"bonusDamage": {
+					"value": 0
+				},
+				"property1": {
+					"value": "",
+					"dice": 0,
+					"die": "",
+					"damageType": "",
+					"critDice": 0,
+					"critDie": "",
+					"critDamage": "",
+					"critDamageType": ""
+				}
+			},
+			"type": "weapon",
+			"flags": {
+				"core": {},
+				"scene-packer": {
+					"hash": "6e926ef2f92fe7fa1ed154133b4c74ff13009105"
+				}
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.equipment-srd.Item.aXuJh4i8HqSu6NYV",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"_id": "v76U0FDUQXK7q9Gu",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.v76U0FDUQXK7q9Gu"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/core/icons/weapons/ammunition/arrows-broadhead-white.webp",
+			"name": "Arrows",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>These projectiles are the ammunition for bows. The shaft of an arrow is made of wood. It is stabilized in flight by fletching at one end and bears a metal head on the other.</p>"
+				},
+				"rules": [],
+				"slug": "arrows",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"consumable"
+					],
+					"rarity": "common"
+				},
+				"publication": {
+					"title": "Pathfinder Core Rulebook",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"level": {
+					"value": 0
+				},
+				"quantity": 20,
+				"baseItem": "arrows",
+				"bulk": {
+					"value": 0.1
+				},
+				"hp": {
+					"value": 0,
+					"max": 0
+				},
+				"hardness": 0,
+				"price": {
+					"value": {
+						"sp": 1
+					},
+					"per": 10
+				},
+				"equipped": {
+					"carryType": "worn"
+				},
+				"containerId": null,
+				"size": "lg",
+				"material": {
+					"type": null,
+					"grade": null
+				},
+				"identification": {
+					"status": "identified",
+					"unidentified": {
+						"name": "",
+						"img": "",
+						"data": {
+							"description": {
+								"value": ""
+							}
+						}
+					},
+					"misidentified": {}
+				},
+				"craftableAs": null,
+				"uses": {
+					"value": 1,
+					"max": 1,
+					"autoDestroy": true
+				}
+			},
+			"type": "ammo",
+			"flags": {
+				"core": {},
+				"scene-packer": {
+					"hash": "b6c3c31601430e8c6d2c409b03af1870fd080e1a"
+				}
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.equipment-srd.Item.w2ENw2VMPcsbif8g",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"_id": "6pOzgTgh2gnrpZcp",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.6pOzgTgh2gnrpZcp"
+		},
+		{
+			"_id": "GaT7yqXBAIfWauAU",
+			"name": "Longbow",
+			"type": "melee",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": ""
+				},
+				"rules": [],
+				"slug": "longbow",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"deadly-d10",
+						"magical",
+						"reload-0",
+						"unholy",
+						"volley-30"
+					],
+					"config": {}
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"damageRolls": {
+					"4J80KSgZLlpCJVCS": {
+						"damage": "2d8+9",
+						"damageType": "piercing",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 15
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": {
+					"increment": 100,
+					"max": null
+				},
+				"action": "strike",
+				"area": null,
+				"subjectToMAP": true
+			},
+			"flags": {
+				"pf2e": {
+					"linkedWeapon": "v7SzojYUtPBGGU2L"
+				},
+				"scene-packer": {
+					"hash": "9dcc606e710b005526ba25ad2e3a03c45735fdf5"
+				},
+				"aoe-easy-resolve": {
+					"ignoreAoE": false,
+					"useOverride": false,
+					"provideTemplate": false,
+					"saveType": "reflex",
+					"saveDC": null,
+					"useCustomDamage": false,
+					"customDamage": "",
+					"customDamageType": "",
+					"multipliers": {
+						"criticalSuccess": 0,
+						"success": 0.5,
+						"failure": 1,
+						"criticalFailure": 2
+					}
+				}
+			},
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.GaT7yqXBAIfWauAU"
+		},
+		{
+			"_id": "qGYhmUUgkXJSL0Yk",
+			"name": "Longspear",
+			"type": "melee",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": ""
+				},
+				"rules": [],
+				"slug": "longspear",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"magical",
+						"reach-15",
+						"unholy"
+					],
+					"config": {}
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"damageRolls": {
+					"POwXjMmBT4vNRPfn": {
+						"damage": "2d8+9",
+						"damageType": "piercing",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 15
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"action": "strike",
+				"area": null,
+				"range": null,
+				"subjectToMAP": true
+			},
+			"flags": {
+				"pf2e": {
+					"linkedWeapon": "v76U0FDUQXK7q9Gu"
+				},
+				"scene-packer": {
+					"hash": "e5e561ffbbbaf8a1ce3ba023577bbea865e0d5c0"
+				},
+				"aoe-easy-resolve": {
+					"ignoreAoE": false,
+					"useOverride": false,
+					"provideTemplate": false,
+					"saveType": "reflex",
+					"saveDC": null,
+					"useCustomDamage": false,
+					"customDamage": "",
+					"customDamageType": "",
+					"multipliers": {
+						"criticalSuccess": 0,
+						"success": 0.5,
+						"failure": 1,
+						"criticalFailure": 2
+					}
+				}
+			},
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.qGYhmUUgkXJSL0Yk"
+		},
+		{
+			"type": "melee",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"name": "Sting",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": ""
+				},
+				"rules": [],
+				"slug": null,
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"agile",
+						"magical",
+						"poison",
+						"reach-15",
+						"unarmed",
+						"unholy"
+					],
+					"config": {}
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"damageRolls": {
+					"ge9tqGqGW5Z7FXOY": {
+						"damage": "1d12+3",
+						"damageType": "piercing",
+						"category": null
+					},
+					"oT4mZCKUQpJw6lx0": {
+						"damage": "2d4",
+						"damageType": "poison",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 17
+				},
+				"attackEffects": {
+					"value": [
+						"poison-of-ancient-time"
+					]
+				},
+				"action": "strike",
+				"area": null,
+				"range": null,
+				"subjectToMAP": true
+			},
+			"effects": [],
+			"_id": "VWyQzsKJzufr9kKa",
+			"folder": null,
+			"sort": 0,
+			"flags": {
+				"scene-packer": {
+					"hash": "8d42d1ad0459d676f284da654bc084ba2242bb6a"
+				},
+				"aoe-easy-resolve": {
+					"ignoreAoE": false,
+					"useOverride": false,
+					"provideTemplate": false,
+					"saveType": "reflex",
+					"saveDC": null,
+					"useCustomDamage": false,
+					"customDamage": "",
+					"customDamageType": "",
+					"multipliers": {
+						"criticalSuccess": 0,
+						"success": 0.5,
+						"failure": 1,
+						"criticalFailure": 2
+					}
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.VWyQzsKJzufr9kKa"
+		},
+		{
+			"type": "action",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/TwoActions.webp",
+			"name": "Vicious Sting",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p><strong class=\"font-normal\">Requirements</strong> the Aqrabuamelu has a creature grappled with its claw; </p><hr /><p><strong class=\"font-normal\">Effect</strong> the Aqrabuamelu attempts a sting Strike against the grappled creature, injecting the poison in their body. If they hit, the poison gains the virulent trait. If they critically hit, the creature considers the result as one degree worse. The aqrabuamelu can't use Vicious Sting again for [[/br 1d4 #Recharge Vicious Sting]]{1d4 rounds}.</p>"
+				},
+				"rules": [],
+				"slug": null,
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"attack"
+					]
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"actionType": {
+					"value": "action"
+				},
+				"category": "offensive",
+				"actions": {
+					"value": 2
+				},
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "hTjr5Cqwp6RRx6mh",
+			"folder": null,
+			"sort": 500000,
+			"flags": {
+				"scene-packer": {
+					"hash": "58006acddd3a392fab2538173fe8aabca2b71e5f"
+				},
+				"aoe-easy-resolve": {
+					"ignoreAoE": false,
+					"useOverride": false,
+					"provideTemplate": false,
+					"saveType": "reflex",
+					"saveDC": null,
+					"useCustomDamage": false,
+					"customDamage": "",
+					"customDamageType": "",
+					"multipliers": {
+						"criticalSuccess": 0,
+						"success": 0.5,
+						"failure": 1,
+						"criticalFailure": 2
+					}
+				}
+			},
+			"_stats": {
+				"compendiumSource": "Actor.kKEzaVxOmlSuozMn.Item.hTjr5Cqwp6RRx6mh",
+				"duplicateSource": "Actor.kKEzaVxOmlSuozMn.Item.hTjr5Cqwp6RRx6mh",
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.hTjr5Cqwp6RRx6mh"
+		},
+		{
+			"type": "action",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Poison Of Ancient Time",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<div class=\"hanging-indent\"><p><strong class=\"font-normal\">Saving Throw</strong> @Check[type:fortitude|dc:21]; <br /><strong class=\"font-normal\">Maximum Duration</strong> 6 rounds; </p><hr /><p><strong class=\"font-normal\">Stage 1</strong> @Damage[1d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} <span class=\"font-normal font-weight-normal\">(2 round)</span>; </p><p><strong class=\"font-normal\">Stage 2</strong> @Damage[2d10[poison]] damage and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 1} <span class=\"font-normal font-weight-normal\">(2 round)</span>; </p><p><strong class=\"font-normal\">Stage 3</strong> @Damage[2d10[poison]] and @UUID[Compendium.pf2e.conditionitems.Item.MIRkyAjyBeXivMa7]{Enfeebled 2} <span class=\"font-normal font-weight-normal\">(2 round)</span></p></div>"
+				},
+				"rules": [],
+				"slug": null,
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"injury",
+						"poison"
+					]
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"actionType": {
+					"value": "passive"
+				},
+				"category": "offensive",
+				"actions": {
+					"value": null
+				},
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "MEDQ7mwRXPQ1uhr4",
+			"folder": null,
+			"sort": 300000,
+			"flags": {
+				"scene-packer": {
+					"hash": "1e6140a3222818e1ed7cee0bb0715f7251bbfce5"
+				},
+				"LocknKey": {
+					"IDKeysFlag": "",
+					"RemoveKeyonUseFlag": false,
+					"LPFormulaFlag": "",
+					"LPFormulaOverrideFlag": false,
+					"LBFormulaFlag": "",
+					"LBFormulaOverrideFlag": false,
+					"ReplacementItemFlag": ""
+				},
+				"aoe-easy-resolve": {
+					"ignoreAoE": false,
+					"useOverride": false,
+					"provideTemplate": false,
+					"saveType": "reflex",
+					"saveDC": null,
+					"useCustomDamage": false,
+					"customDamage": "",
+					"customDamageType": "",
+					"multipliers": {
+						"criticalSuccess": 0,
+						"success": 0.5,
+						"failure": 1,
+						"criticalFailure": 2
+					}
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.MEDQ7mwRXPQ1uhr4"
+		},
+		{
+			"type": "action",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/TwoActions.webp",
+			"name": "Tear Apart",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p><strong class=\"font-normal\">Requirements</strong> the Aqrabuamelu has a creature grappled with only one claw and doesn't have a creature grappled in the other; </p><hr /><p><strong class=\"font-normal\">Effect</strong> the Aqrabuamelu grapple the creature with the other claw, and start tearing it apart, dealing @Damage[4d6[bludgeoning]] damage <span class=\"font-normal font-weight-normal\">(@Check[type:fortitude|dc:21|basic:true])</span>. If a creature is reduced to 0 hp from this damage is killed as the aqrabuamelu manages to tear the creature in two.</p>"
+				},
+				"rules": [],
+				"slug": null,
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"death"
+					]
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"actionType": {
+					"value": "action"
+				},
+				"category": "offensive",
+				"actions": {
+					"value": 2
+				},
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "Crt1EsworJYYyWNv",
+			"folder": null,
+			"sort": 400000,
+			"flags": {
+				"scene-packer": {
+					"hash": "58006acddd3a392fab2538173fe8aabca2b71e5f"
+				},
+				"aoe-easy-resolve": {
+					"ignoreAoE": false,
+					"useOverride": false,
+					"provideTemplate": false,
+					"saveType": "reflex",
+					"saveDC": null,
+					"useCustomDamage": false,
+					"customDamage": "",
+					"customDamageType": "",
+					"multipliers": {
+						"criticalSuccess": 0,
+						"success": 0.5,
+						"failure": 1,
+						"criticalFailure": 2
+					}
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.Crt1EsworJYYyWNv"
+		},
+		{
+			"type": "action",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Prehensile Claw",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>The aqrabuamelu can grapple up to two creatures at the same time, one for each claws.</p>"
+				},
+				"rules": [],
+				"slug": null,
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"actionType": {
+					"value": "passive"
+				},
+				"category": "interaction",
+				"actions": {
+					"value": null
+				},
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "bWv9MYzoabQDbOFz",
+			"folder": null,
+			"sort": 400000,
+			"flags": {
+				"scene-packer": {
+					"hash": "1e6140a3222818e1ed7cee0bb0715f7251bbfce5"
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.bWv9MYzoabQDbOFz"
+		},
+		{
+			"type": "action",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Arthropod Legs",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>The aqrabuamelu has a +2 Circumstance bonus to its Reflex DC against all effects that would @UUID[Compendium.pf2e.actionspf2e.Item.ge56Lu1xXVFYUnLP]{Trip} it or @UUID[Compendium.pf2e.actionspf2e.Item.7blmbDrQFNfdT731]{Shove} it.</p>"
+				},
+				"rules": [
+					{
+						"key": "FlatModifier",
+						"value": 2,
+						"type": "circumstance",
+						"predicate": [
+							{
+								"or": [
+									"action:shove",
+									"action:trip"
+								]
+							}
+						],
+						"selector": [
+							"fortitude",
+							"reflex"
+						]
+					}
+				],
+				"slug": null,
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"actionType": {
+					"value": "passive"
+				},
+				"category": "defensive",
+				"actions": {
+					"value": null
+				},
+				"deathNote": false
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 100000,
+			"flags": {
+				"scene-packer": {
+					"hash": "266182a6b62420987c022cd5cdee7829383d6a1b"
+				},
+				"core": {}
+			},
+			"_stats": {
+				"compendiumSource": "Scene.Em3pBgItVfGCfGyv.Token.id08GWeaBblpxY9v.Actor.8hdTSv5wXbPIyu2C.Item.aMBEgDRAfkTe5XDq",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"_id": "NUI4kR7opQmRSjlO",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.NUI4kR7opQmRSjlO"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Reaction.webp",
+			"name": "Reactive Strike",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p><strong>Trigger</strong> A creature within your reach uses a manipulate action or a move action, makes a ranged attack, or leaves a square during a move action it's using.</p>\n<hr />\n<p>You lash out at a foe that leaves an opening. Make a melee Strike against the triggering creature. If your attack is a critical hit and the trigger was a manipulate action, you disrupt that action. This Strike doesn't count toward your multiple attack penalty, and your multiple attack penalty doesn't apply to this Strike.</p>"
+				},
+				"rules": [],
+				"slug": "reactive-strike",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.932,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"publication": {
+					"title": "Pathfinder Player Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"actionType": {
+					"value": "reaction"
+				},
+				"category": "defensive",
+				"actions": {
+					"value": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"flags": {
+				"core": {}
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 250000,
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.actionspf2e.Item.KAVf7AmRnbCAHrkT",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"_id": "WnDVexOGkuUK8Q4y",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.WnDVexOGkuUK8Q4y"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Grab",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "grab",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.934,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 200000,
+			"flags": {},
+			"_id": "2SVzYdfLSapW59tL",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gOlxVWAR1V3g6mcq.2SVzYdfLSapW59tL"
+		}
+	],
+	"flags": {
+		"scene-packer": {
+			"hash": "25ea592f1f9fbc3d15cb198db2d45e928305835d",
+			"sourceId": "Actor.8hdTSv5wXbPIyu2C"
+		},
+		"core": {},
+		"pf2e": {}
+	},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.kKEzaVxOmlSuozMn",
+		"duplicateSource": "Actor.8QmIgCNiOOTUPEon",
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116947603,
+		"modifiedTime": 1776116947603,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "gOlxVWAR1V3g6mcq",
+	"sort": 0,
+	"_key": "!actors!gOlxVWAR1V3g6mcq"
+}

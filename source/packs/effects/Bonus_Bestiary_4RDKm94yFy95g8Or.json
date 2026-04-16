@@ -1,0 +1,23 @@
+{
+	"type": "Item",
+	"folder": null,
+	"name": "Bonus Bestiary",
+	"color": "#671e61",
+	"sorting": "a",
+	"_id": "4RDKm94yFy95g8Or",
+	"description": "",
+	"sort": 500000,
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116995943,
+		"modifiedTime": 1776116995962,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"_key": "!folders!4RDKm94yFy95g8Or"
+}

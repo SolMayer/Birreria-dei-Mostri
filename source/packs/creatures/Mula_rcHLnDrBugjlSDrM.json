@@ -1,0 +1,1003 @@
+{
+	"folder": "5TJZtjuny42x2RFC",
+	"name": "Mula",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 1,
+		"width": 1,
+		"name": "Mula",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 200,
+				"temp": 0,
+				"max": 200,
+				"details": "Regeneration 10 (Deactivated By Holy, Silver or Dawnsilver); Void Healing"
+			},
+			"ac": {
+				"value": 36,
+				"details": ""
+			},
+			"allSaves": {
+				"value": "+1 Status to All Saves vs. Magic"
+			},
+			"speed": {
+				"value": 25,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"weaknesses": [
+				{
+					"type": "vampire-weaknesses",
+					"value": 1,
+					"exceptions": []
+				}
+			],
+			"immunities": [
+				{
+					"type": "death-effects",
+					"exceptions": []
+				},
+				{
+					"type": "disease",
+					"exceptions": []
+				},
+				{
+					"type": "paralyzed",
+					"exceptions": []
+				},
+				{
+					"type": "poison",
+					"exceptions": []
+				},
+				{
+					"type": "sleep",
+					"exceptions": []
+				}
+			],
+			"resistances": [
+				{
+					"type": "physical",
+					"value": 10,
+					"exceptions": [
+						"silver",
+						"dawnsilver"
+					],
+					"doubleVs": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [
+					"common"
+				],
+				"details": ""
+			},
+			"level": {
+				"value": 14
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"abilities": {
+			"str": {
+				"mod": 0
+			},
+			"dex": {
+				"mod": 0
+			},
+			"con": {
+				"mod": 0
+			},
+			"int": {
+				"mod": 0
+			},
+			"wis": {
+				"mod": 0
+			},
+			"cha": {
+				"mod": 0
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 25,
+			"senses": [
+				{
+					"type": "darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 28,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 24,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 25,
+				"saveDetail": ""
+			}
+		},
+		"skills": {
+			"athletics": {
+				"base": 25,
+				"special": []
+			},
+			"deception": {
+				"base": 25,
+				"special": []
+			},
+			"intimidation": {
+				"base": 31,
+				"special": []
+			},
+			"stealth": {
+				"base": 28,
+				"special": []
+			}
+		},
+		"traits": {
+			"value": [
+				"undead",
+				"unholy",
+				"vampire"
+			],
+			"rarity": "common",
+			"size": {
+				"value": "med"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "+1 Status to All Saves vs. Magic",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "FlatModifier",
+						"predicate": [
+							"item:magical"
+						],
+						"selector": "saving-throw",
+						"type": "status",
+						"value": 1
+					}
+				],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "1-status-to-all-saves-vs-magic",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "oIfo8FdAVCNiXgHZ",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.oIfo8FdAVCNiXgHZ"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Void Healing",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "ActiveEffectLike",
+						"mode": "override",
+						"path": "system.attributes.hp.negativeHealing",
+						"value": true
+					}
+				],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "void-healing",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "Cko6bPh7m4nFJaof",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.Cko6bPh7m4nFJaof"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Regeneration 10 (Deactivated By Holy, Silver or Dawnsilver)",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": true,
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"deactivatedBy": [
+							"holy",
+							"silver",
+							"dawnsilver"
+						],
+						"key": "FastHealing",
+						"type": "regeneration",
+						"value": 10
+					}
+				],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "regeneration",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "FjMJODO4gnkiRA3I",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.FjMJODO4gnkiRA3I"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Reaction.webp",
+			"name": "Reactive Strike",
+			"system": {
+				"actionType": {
+					"value": "reaction"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "reactive-strike",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "Dhcew2U3ZyJ5pCVn",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.Dhcew2U3ZyJ5pCVn"
+		},
+		{
+			"folder": "Pycs65tqRMBiiARd",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Drink Blood",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p><strong>Requirement</strong> A @UUID[Compendium.pf2e.conditionitems.Item.kWc1fhmv9LBiTuei]{Grabbed}, @UUID[Compendium.pf2e.conditionitems.Item.6uEgoh53GbXuHpTF]{Paralyzed}, @UUID[Compendium.pf2e.conditionitems.Item.VcDeM8A5oI6VqhbM]{Restrained}, @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious}, or willing creature is within the vampire's reach.</p>\n<hr />\n<p><strong>Effect</strong> The vampire sinks its fangs into that creature to drink its blood. This requires an @Check[athletics|defense:fortitude] check against the victim's Fortitude DC if the victim is grabbed and is automatic for any of the other conditions.</p>\n<p>The victim is @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1} and the vampire regains HP equal to 10% of its maximum HP, gaining any excess HP as temporary Hit Points. Drinking Blood from a creature that's already drained doesn't restore any HP to the vampire but increases the victim's drained value by 1, killing the victim when it reaches drained 5. A vampire can also consume blood that's been emptied into a vessel for sustenance, but it gains no HP from doing so.</p>\n<p>A victim's drained condition decreases by 1 per week. A blood transfusion, which requires a @Check[medicine|dc:20|name:Blood Transfusion] check and sufficient blood or a blood donor, reduces the drain by 1 after 10 minutes.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [
+						"divine"
+					],
+					"otherTags": []
+				},
+				"slug": "vampire-basic-drink-blood",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-family-ability-glossary.Item.c04ICnrzygyFG3PK",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "pfs2fMyDsXmxlbzy",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.pfs2fMyDsXmxlbzy"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Darkvision",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "darkvision",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "kW7ZGZUZi6Qaaibh",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.kW7ZGZUZi6Qaaibh"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Grab",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "grab",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "DX8oIQEJ8aWGwSfP",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.DX8oIQEJ8aWGwSfP"
+		},
+		{
+			"type": "melee",
+			"name": "Claws",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"agile",
+						"unarmed"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"h7AOoUcTsgIt1htP": {
+						"damage": "3d8+15",
+						"damageType": "slashing",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 29
+				},
+				"attackEffects": {
+					"value": [
+						"grab"
+					]
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "Zt3GeR7BOKQTgkt1",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.Zt3GeR7BOKQTgkt1"
+		},
+		{
+			"type": "melee",
+			"name": "Jaws",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"unarmed"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"7rwj55ynaJqpnD6S": {
+						"damage": "3d8+20",
+						"damageType": "piercing",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 27
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "WYDr7dJ76LdDc1mn",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.WYDr7dJ76LdDc1mn"
+		},
+		{
+			"type": "action",
+			"name": "Voracious Rage",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p><strong>Requirements</strong> The mula's most recent action is a critical hit with a jaws Strike</p><hr /><p><strong>Effect</strong> The mula enters in a frenzy-like rage until the end of its next turn. While in rage, the Mula's resistance to physical damage increases to 15, but it is considered @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard}.</p><p></p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "fVPSwql7MNo9d3Xm",
+			"img": "systems/pf2e/icons/actions/OneAction.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.fVPSwql7MNo9d3Xm"
+		},
+		{
+			"type": "action",
+			"name": "Twin Claws",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p><strong>Requirements</strong> The Mula is in frenzy thanks to Voracious Rage.</p><hr /><p><strong>Effect</strong> The Mula attempts two claw Strikes against a creature within reach, each using the mula's current multiple attack penalty. If both attacks hit, the mula combines their damage and then add any other applicable effects from both attacks. The mula adds any precision damage only once, to the attack of her choice. Combine the damage from both Strikes and apply resistances and weaknesses only once. This counts as two attacks when calculating the mula's multiple attack penalty.</p><p></p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "dzwPRquGLtCrkrih",
+			"img": "systems/pf2e/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.dzwPRquGLtCrkrih"
+		},
+		{
+			"type": "action",
+			"name": "Manifest Fear",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The Mula targets a creature within 30 feet from it that it can see, invading their mind with frightful images. Target creature must attempt at a @Check[will|dc:31] Save or take @Damage[4d12[mental]] damage. Once used, the mula can't use Manifest Fear again for [[/gmr 1d4 #Duration]]{1d4 rounds}.</p><hr /><p><strong>Critical Success</strong>: Target creature is unaffected.</p><p><strong>Success</strong> Target creature takes half damage and it's @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p><p><strong>Failure</strong> Target creature takes full damage and is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p><p><strong>Critical Failure</strong> as failure but the creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3}.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate",
+						"emotion",
+						"fear",
+						"mental",
+						"occult"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "IpZywkG2n6qSsA7L",
+			"img": "systems/pf2e/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!rcHLnDrBugjlSDrM.IpZywkG2n6qSsA7L"
+		}
+	],
+	"flags": {
+		"pf2e-aztecs-precious": {
+			"lootDropped": false
+		}
+	},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.U5FKiOCmeZSzh2uR",
+		"duplicateSource": "Actor.d6eqxmGO78EiN6hj",
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116956701,
+		"modifiedTime": 1776116956701,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "rcHLnDrBugjlSDrM",
+	"sort": 0,
+	"_key": "!actors!rcHLnDrBugjlSDrM"
+}

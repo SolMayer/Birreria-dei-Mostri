@@ -1,0 +1,750 @@
+{
+	"folder": "5TJZtjuny42x2RFC",
+	"name": "Chosen of Baphomet",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 2,
+		"width": 2,
+		"name": "Chosen of Baphomet",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": true,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 349,
+				"temp": 0,
+				"max": 349,
+				"details": ""
+			},
+			"ac": {
+				"value": 34,
+				"details": ""
+			},
+			"allSaves": {
+				"value": "+2 Status to All Saves vs. Magic"
+			},
+			"speed": {
+				"value": 35,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"weaknesses": [
+				{
+					"type": "holy",
+					"value": 9,
+					"exceptions": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [
+					"chthonian",
+					"common"
+				],
+				"details": ""
+			},
+			"level": {
+				"value": 15
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"abilities": {
+			"str": {
+				"mod": 9
+			},
+			"dex": {
+				"mod": 2
+			},
+			"con": {
+				"mod": 8
+			},
+			"int": {
+				"mod": 0
+			},
+			"wis": {
+				"mod": 2
+			},
+			"cha": {
+				"mod": 2
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 23,
+			"senses": [
+				{
+					"type": "darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 29,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 23,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 26,
+				"saveDetail": ""
+			}
+		},
+		"skills": {},
+		"traits": {
+			"value": [
+				"fiend",
+				"unholy"
+			],
+			"rarity": "rare",
+			"size": {
+				"value": "lg"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Darkvision",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "darkvision",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 50000,
+			"flags": {},
+			"_id": "pHIxrshVxpbY357u",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gUUqTHSEsJaBUVOp.pHIxrshVxpbY357u"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "+2 Status to All Saves vs. Magic",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "FlatModifier",
+						"predicate": [
+							"item:magical"
+						],
+						"selector": [
+							"saving-throw"
+						],
+						"type": "status",
+						"value": 2
+					}
+				],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "2-status-to-all-saves-vs-magic",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "E1xt5hT7E7mEuK3x",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gUUqTHSEsJaBUVOp.E1xt5hT7E7mEuK3x"
+		},
+		{
+			"type": "action",
+			"name": "Labyrinthine Recall",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>The Chosen of Baphomet can perfectly recall any path they have traveled and therefore are immune to any effect that would make them lose direction and spells like @UUID[Compendium.pf2e.spells-srd.Item.qOeBQyC1z7OScHvP] or @UUID[Compendium.pf2e.spells-srd.Item.Oj1PJBMQD9vuwCv7].</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "xgAmghR2OJtIvWH6",
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 100000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gUUqTHSEsJaBUVOp.xgAmghR2OJtIvWH6"
+		},
+		{
+			"type": "action",
+			"name": "Blessing of Baphomet",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>Whenever the chosen of Baphomet hits or critically hits a creature with its greataxe, target creature must attempt at a @Check[fortitude|dc:33|trait:incapacitation] or be  @UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 1} (@UUID[Compendium.pf2e.conditionitems.dfCMdR4wnpbYNTix]{Stunned 2} with a critical failure).</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"incapacitation"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "IMIkk7Cxej57FNgY",
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gUUqTHSEsJaBUVOp.IMIkk7Cxej57FNgY"
+		},
+		{
+			"type": "melee",
+			"name": "Greataxe",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"magical",
+						"reach-10",
+						"spirit",
+						"sweep",
+						"unholy"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"PQTc9qbPFjrspYxQ": {
+						"damage": "3d12",
+						"damageType": "slashing",
+						"category": null
+					},
+					"5oxi1GuHY2VzmoM1": {
+						"damage": "3d10",
+						"damageType": "spirit",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 30
+				},
+				"attackEffects": {
+					"value": [
+						"blessing-of-baphomet"
+					]
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "6bHVDWkU6kWSCkqk",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gUUqTHSEsJaBUVOp.6bHVDWkU6kWSCkqk"
+		},
+		{
+			"type": "melee",
+			"name": "Gore",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"magical",
+						"spirit",
+						"unholy"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"0PhbpkcBmQJWK1eb": {
+						"damage": "3d12+13",
+						"damageType": "piercing",
+						"category": null
+					},
+					"kSOVBNWZYHyXUM8q": {
+						"damage": "2d12",
+						"damageType": "spirit",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 24
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "zuXvbVs12qhBRNL8",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gUUqTHSEsJaBUVOp.zuXvbVs12qhBRNL8"
+		},
+		{
+			"type": "action",
+			"name": "Baphomet's Charge",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The Chosen of Baphomet [[/act stride]]{Strides} twice and attempts a single gore Strike. If they hit, target creature must attempt at a @Check[fortitude|dc:33] save.</p><hr /><p><strong>Critical Success</strong> The creature takes the strike's damage, without any further effects.</p><p><strong>Success</strong> The creature is pushed back by 5 feet.</p><p><strong>Failure</strong> The creature is pushed back by 10 feet and takes @Damage[3d6[bleed,persistent]] damage as the minotaur's horns pierce through them.</p><p><strong>Critical Failure</strong> The creature is not pushed back, but instead is @UUID[Compendium.pf2e.conditionitems.Item.eIcWbB5o3pP6OIMe]{Immobilized} as the chosen of baphomet impales them with its horn, dealing an additional @Damage[6d6[bleed,persistent]] damage.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"flourish",
+						"move"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "4JHNpRlYdEmEZYGf",
+			"img": "systems/pf2e/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gUUqTHSEsJaBUVOp.4JHNpRlYdEmEZYGf"
+		},
+		{
+			"type": "action",
+			"name": "Stir the Rage of Baphomet",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The Chosen of Baphomet targets a creature within 30 feet of him, channeling the power of Baphomet to make them furious and confused. Target creature takes @Damage[16d6[mental]] damage and must attempt at a @Check[will|dc:33|traits:incapacitation,mental|options:damaging-effect] Save.</p><hr /><p><strong>Critical Success</strong> the creature is unaffected</p><p><strong>Success</strong> the creature take half damage and is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{Confused} until the end of its next turn.</p><p><strong>Failure</strong> the creature take full damage and is confused for two turns.</p><p><strong>Critical Failure</strong> as failure and the creature is confused for 1 minute.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate",
+						"divine",
+						"incapacitation",
+						"mental"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": 3
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "pFIUG4zKw7srCfJv",
+			"img": "systems/pf2e/icons/actions/ThreeActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!gUUqTHSEsJaBUVOp.pFIUG4zKw7srCfJv"
+		}
+	],
+	"flags": {
+		"pf2e-aztecs-precious": {
+			"lootDropped": false
+		}
+	},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.NM4RPIbJmXwhiaEe",
+		"duplicateSource": "Actor.HKrLh4gkTAqDikY4",
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116956701,
+		"modifiedTime": 1776116956701,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "gUUqTHSEsJaBUVOp",
+	"sort": 0,
+	"_key": "!actors!gUUqTHSEsJaBUVOp"
+}

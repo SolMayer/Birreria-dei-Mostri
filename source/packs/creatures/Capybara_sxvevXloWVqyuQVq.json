@@ -1,0 +1,488 @@
+{
+	"folder": "WxElBye6udKxlJSz",
+	"name": "Capybara",
+	"type": "npc",
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 1,
+		"width": 1,
+		"name": "Capybara",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 7,
+				"temp": 0,
+				"max": 7,
+				"details": ""
+			},
+			"ac": {
+				"value": 14,
+				"details": "Serene Posture"
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 30,
+				"otherSpeeds": [
+					{
+						"type": "swim",
+						"value": 20
+					}
+				],
+				"details": ""
+			}
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [],
+				"details": ""
+			},
+			"level": {
+				"value": -1
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "",
+				"authors": "",
+				"license": "OGL",
+				"remaster": false
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"abilities": {
+			"str": {
+				"mod": 0
+			},
+			"dex": {
+				"mod": 3
+			},
+			"con": {
+				"mod": 2
+			},
+			"int": {
+				"mod": -5
+			},
+			"wis": {
+				"mod": 0
+			},
+			"cha": {
+				"mod": 0
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 5,
+			"senses": [
+				{
+					"type": "scent",
+					"acuity": "imprecise",
+					"range": 30
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 0,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 0,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 0,
+				"saveDetail": ""
+			}
+		},
+		"skills": {},
+		"traits": {
+			"value": [
+				"animal"
+			],
+			"rarity": "common",
+			"size": {
+				"value": "med"
+			}
+		}
+	},
+	"_id": "sxvevXloWVqyuQVq",
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"name": "Scent (Imprecise) 30 Feet",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Scent]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "scent",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.rqfnQ5VHT5hxm25r",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"he3UaLGz9ZNQy3ON": 3
+			},
+			"flags": {},
+			"_id": "b1H4Df15a3ASBKOD",
+			"_key": "!actors.items!sxvevXloWVqyuQVq.b1H4Df15a3ASBKOD"
+		},
+		{
+			"type": "action",
+			"name": "Serene Posture",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>The serene visage of a capybara makes it difficult to hit it. Whenever a creature attempts a Strike against a capybara, they gain a -1 circumstance malus to hit.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"visual"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "DSOs1zq1xdIqAkPM",
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"he3UaLGz9ZNQy3ON": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"_key": "!actors.items!sxvevXloWVqyuQVq.DSOs1zq1xdIqAkPM"
+		},
+		{
+			"type": "action",
+			"name": "Pack Attack",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>The capybara's Strikes deal 1d4 extra damage to creatures within reach of at least two of the capybara's allies.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "DamageDice",
+						"selector": "strike-damage",
+						"predicate": [
+							"pack-attack"
+						],
+						"dieSize": "d4",
+						"diceNumber": 1
+					},
+					{
+						"key": "RollOption",
+						"option": "pack-attack",
+						"toggleable": true,
+						"value": false
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "Z2GDh3cyIwzcVbHp",
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"he3UaLGz9ZNQy3ON": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"_key": "!actors.items!sxvevXloWVqyuQVq.Z2GDh3cyIwzcVbHp"
+		},
+		{
+			"type": "melee",
+			"name": "Jaws",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"wQfkLVMZZANCHaQF": {
+						"damage": "1d4",
+						"damageType": "piercing",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 6
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "pubbA8d0SDkQJi3D",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"ownership": {
+				"default": 0,
+				"he3UaLGz9ZNQy3ON": 3
+			},
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"_key": "!actors.items!sxvevXloWVqyuQVq.pubbA8d0SDkQJi3D"
+		}
+	],
+	"sort": 0,
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776329849411,
+		"modifiedTime": 1776329849411,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"_key": "!actors!sxvevXloWVqyuQVq"
+}

@@ -1,0 +1,74 @@
+{
+	"folder": "x3w5JpbQCS4jdOn0",
+	"name": "Effect: Charming Knife",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.lrXcJM3z1aGDiGm1.Item.mx2bE1Opqvl8Met0]</p><hr /><p>The creature is @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} by the harlequin's presence. A creature under the effect of Charming Knife doesn't end their fascinated condition if the harlequin makes an hostile action against them or their allies.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "GrantItem",
+				"uuid": "Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg",
+				"allowDuplicate": false
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 1
+		},
+		"duration": {
+			"value": -1,
+			"unit": "unlimited",
+			"expiry": null,
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"img": "icons/weapons/daggers/dagger-straight-stone.webp",
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Effects.Item.Hs45U9MOheeBQf8x",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116998490,
+		"modifiedTime": 1776117482304,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "vkfwjRAorczkDs5Y",
+	"sort": 0,
+	"_key": "!items!vkfwjRAorczkDs5Y"
+}

@@ -1,0 +1,531 @@
+{
+	"folder": "3TkvZzAM5S6Dtt8s",
+	"name": "Aerial Guardian",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 2,
+		"width": 2,
+		"name": "Aerial Guardian",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 93,
+				"temp": 0,
+				"max": 93,
+				"details": ""
+			},
+			"ac": {
+				"value": 23,
+				"details": ""
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 25,
+				"otherSpeeds": [
+					{
+						"type": "fly",
+						"value": 40
+					}
+				],
+				"details": ""
+			},
+			"resistances": [
+				{
+					"type": "non-magical",
+					"value": 6,
+					"exceptions": [],
+					"doubleVs": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [],
+				"details": "All; Doesn't Speak"
+			},
+			"level": {
+				"value": 6
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"abilities": {
+			"str": {
+				"mod": 4
+			},
+			"dex": {
+				"mod": 5
+			},
+			"con": {
+				"mod": 4
+			},
+			"int": {
+				"mod": 4
+			},
+			"wis": {
+				"mod": 1
+			},
+			"cha": {
+				"mod": 4
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 14,
+			"senses": [
+				{
+					"type": "darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 11,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 17,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 14,
+				"saveDetail": ""
+			}
+		},
+		"skills": {},
+		"traits": {
+			"value": [
+				"construct"
+			],
+			"rarity": "common",
+			"size": {
+				"value": "lg"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"type": "melee",
+			"name": "Arm Cannon",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concussive",
+						"magical",
+						"unarmed"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"iVb6Pdlk0E7LmbUu": {
+						"damage": "2d6+8",
+						"damageType": "bludgeoning",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 15
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": {
+					"increment": 120,
+					"max": null
+				},
+				"subjectToMAP": true
+			},
+			"_id": "QPQI6Ox2cpGUytr8",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!7jOdQ78beXZLeOwh.QPQI6Ox2cpGUytr8"
+		},
+		{
+			"type": "melee",
+			"name": "Scythe",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"deadly-d10",
+						"reach-10",
+						"trip",
+						"unarmed"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"MOdjMTUNl44MN6xT": {
+						"damage": "2d6+8",
+						"damageType": "slashing",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 15
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "pe1aPAhCE3PLKVNR",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!7jOdQ78beXZLeOwh.pe1aPAhCE3PLKVNR"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Darkvision",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "darkvision",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "AQpakpxqOP8XNiwA",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!7jOdQ78beXZLeOwh.AQpakpxqOP8XNiwA"
+		},
+		{
+			"type": "action",
+			"name": "Deadly Shot",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The aerial guardian targets a creature's vital organs before shooting with its arm cannon. The aerial guardian attempts an arm cannon Strike. The Strike gains a -2 circumstance to hit, and it gains the fatal d10 trait and deals 1d6 extra persistent bleeding damage.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "RollOption",
+						"option": "deadlyShot",
+						"toggleable": true
+					},
+					{
+						"key": "FlatModifier",
+						"selector": [
+							"arm-cannon-attack"
+						],
+						"value": -2,
+						"predicate": [
+							"deadlyShot"
+						]
+					},
+					{
+						"key": "DamageDice",
+						"predicate": [
+							"deadlyShot"
+						],
+						"selector": "arm-cannon-damage",
+						"dieSize": "d6",
+						"diceNumber": 1,
+						"damageType": "bleed",
+						"category": "persistent"
+					},
+					{
+						"key": "AdjustStrike",
+						"mode": "add",
+						"selector": "arm-cannon-attack",
+						"property": "weapon-traits",
+						"value": "fatal-d10",
+						"predicate": [
+							"deadlyShot"
+						]
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.1"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "0z5DXg0D2PJ79MDZ",
+			"img": "systems/pf2e/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!7jOdQ78beXZLeOwh.0z5DXg0D2PJ79MDZ"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.RLgvichJkjb77SGn",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116949280,
+		"modifiedTime": 1776116949280,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "7jOdQ78beXZLeOwh",
+	"sort": 0,
+	"_key": "!actors!7jOdQ78beXZLeOwh"
+}

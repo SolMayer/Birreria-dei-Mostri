@@ -1,0 +1,773 @@
+{
+	"folder": "138Ks6mVfofF9B59",
+	"name": "Kikimore Queen",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			},
+			"splatter": {
+				"bloodColor": ""
+			},
+			"wall-height": {
+				"tokenHeight": 0
+			},
+			"pf2e-visioner": {
+				"coverOverride": "auto",
+				"encounterMasterTokenId": "",
+				"visionMasterTokenId": ""
+			},
+			"LocknKey": {
+				"LPFormulaFlag": "",
+				"LPFormulaOverrideFlag": false,
+				"LBFormulaFlag": "",
+				"LBFormulaOverrideFlag": false,
+				"PickPocketFormulaFlag": "",
+				"PickPocketFormulaOverrideFlag": false,
+				"LootFormulaFlag": "",
+				"PickPocketDCFlag": null,
+				"MATTTriggerTileFlag": "",
+				"MATTTriggerConditionsFlag": {
+					"LockuseKey": "never",
+					"LockusePasskey": "never",
+					"LockusePick": "never",
+					"LockuseBreak": "never",
+					"LockuseFree": "never",
+					"UsePickPocket": "never"
+				}
+			}
+		},
+		"height": 3,
+		"width": 3,
+		"name": "Kikimore Queen",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 0,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 169,
+				"temp": 0,
+				"max": 169,
+				"details": ""
+			},
+			"ac": {
+				"value": 24,
+				"details": ""
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 35,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"immunities": [
+				{
+					"type": "poison",
+					"exceptions": []
+				},
+				{
+					"type": "blinded",
+					"exceptions": []
+				}
+			],
+			"weaknesses": []
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [],
+				"details": ""
+			},
+			"level": {
+				"value": 8
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"abilities": {
+			"str": {
+				"mod": 7
+			},
+			"dex": {
+				"mod": 2
+			},
+			"con": {
+				"mod": 6
+			},
+			"int": {
+				"mod": -4
+			},
+			"wis": {
+				"mod": 3
+			},
+			"cha": {
+				"mod": 1
+			}
+		},
+		"perception": {
+			"details": "Blindsight 50 Feet",
+			"mod": 13,
+			"senses": [
+				{
+					"type": "darkvision"
+				},
+				{
+					"type": "tremorsense",
+					"acuity": "imprecise",
+					"range": 30
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 19,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 14,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 16,
+				"saveDetail": ""
+			}
+		},
+		"skills": {
+			"athletics": {
+				"base": 18,
+				"special": []
+			}
+		},
+		"traits": {
+			"value": [
+				"beast"
+			],
+			"rarity": "common",
+			"size": {
+				"value": "huge"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"type": "melee",
+			"name": "Jaws",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"reach-10",
+						"unarmed"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"85m1dXjsAzlGVN3M": {
+						"damage": "2d8+9",
+						"damageType": "piercing",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 18
+				},
+				"attackEffects": {
+					"value": [
+						"grab"
+					]
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "RpdnYc94y44hqwTJ",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!i1FmuXFMswqzmw46.RpdnYc94y44hqwTJ"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Darkvision",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "darkvision",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "AllZfNJ4PKddrBkM",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!i1FmuXFMswqzmw46.AllZfNJ4PKddrBkM"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Tremorsense (Imprecise) 30 Feet",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Tremorsense]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "tremorsense",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.j2wsK6IsW5yMW1jW",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 100000,
+			"flags": {},
+			"_id": "X1UqvK4DPY5Z2baj",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!i1FmuXFMswqzmw46.X1UqvK4DPY5Z2baj"
+		},
+		{
+			"type": "action",
+			"name": "Pheromone Aura",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>20 Feet; @Check[will|dc:23]</p><hr /><p>Every living creature that start their turn within the Pheromone Aura must attempt a Will Save or be under one of the following effects for 1 round, chosen by the Kikimore Queen. Creatures who suceeds are unaffected for 24h from the Pheremone Aura.</p><hr /><ul><li><p><strong>Aggression</strong> the affected Creature becomes @UUID[Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg]{Fascinated} by the Queen and consider the Kikimore as allies until the start of their next turn. Fascinated creatures has a status bonus of +2 to hit against every creature that isn't at full Hit Points while under the effect. @UUID[Compendium.monster-homebrewery.effects.Item.2Zm3X0d3hst9EmIJ]{Effect: Kikimore Queen's Aggressive Pheromone}</p></li><li><p><strong>Threat</strong> the affected Creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1} (@UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} with a critical failure).</p></li><li><p><strong>Pacify</strong> the affected Creature is considered @UUID[Compendium.pf2e.conditionitems.Item.fBnFDH2MTzgFijKf]{Unconscious} until the end of its next turn while under this effect, but doesn't fall @UUID[Compendium.pf2e.conditionitems.Item.j91X7x0XSomq8d60]{Prone} (the creature is also knocked prone if they critically fails).</p></li></ul><p></p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "Aura",
+						"radius": 20,
+						"traits": [
+							"emotion",
+							"mental",
+							"inhaled"
+						]
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"aura",
+						"emotion",
+						"inhaled",
+						"mental"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "mUPw5PX8R5keszmL",
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 50000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": "he3UaLGz9ZNQy3ON",
+				"modifiedTime": 1776117328193
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!i1FmuXFMswqzmw46.mUPw5PX8R5keszmL"
+		},
+		{
+			"type": "melee",
+			"name": "Stinger",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"poison",
+						"reach-15",
+						"unarmed"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"Qk2p5BGaJstElxB6": {
+						"damage": "1d10+11",
+						"damageType": "piercing",
+						"category": null
+					},
+					"H8OFuUqhzUxFdgRU": {
+						"damage": "1d10",
+						"damageType": "poison",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 15
+				},
+				"attackEffects": {
+					"value": [
+						"kikimore-venom"
+					]
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "inZKjRNscAZnHKSF",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!i1FmuXFMswqzmw46.inZKjRNscAZnHKSF"
+		},
+		{
+			"type": "action",
+			"name": "Kikimore Venom",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>A creature hitted by the Kikimore Queen's stinger must attempt a @Check[fortitude|dc:23|traits:poison|options:damaging-effect] Save.</p><hr /><p><strong>Critical Success</strong> the target is unaffected</p><p><strong>Success</strong> the target takes @Damage[2d6[poison]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 1}.</p><p><strong>Failure</strong> the target takes @Damage[4d6[poison]] damage and is @UUID[Compendium.pf2e.conditionitems.Item.fesd1n5eVhpCSS18]{Sickened 2}.</p><p><strong>Critical Failure</strong> as failure, but the creature is also @UUID[Compendium.pf2e.conditionitems.Item.4D2KBtexWXa6oUMR]{Drained 1}.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"poison"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "HyapECeWP8XMXJ7l",
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!i1FmuXFMswqzmw46.HyapECeWP8XMXJ7l"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Grab",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "grab",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "X1MPUnsVR20aW79q",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!i1FmuXFMswqzmw46.X1MPUnsVR20aW79q"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Swallow Whole",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>Large, @Damage[(3d10+10)[bludgeoning],2d6[poison]], Rupture 36</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [
+						"attack"
+					],
+					"otherTags": []
+				},
+				"slug": "swallow-whole",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "BbTHqRItU37DDnWZ",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!i1FmuXFMswqzmw46.BbTHqRItU37DDnWZ"
+		}
+	],
+	"flags": {
+		"pf2e-aztecs-precious": {
+			"lootDropped": false
+		}
+	},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.K9voc49iLCJS0Ehj",
+		"duplicateSource": "Actor.V8Jov6mG2a8bNTx9",
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116956701,
+		"modifiedTime": 1776116956701,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "i1FmuXFMswqzmw46",
+	"sort": 0,
+	"_key": "!actors!i1FmuXFMswqzmw46"
+}

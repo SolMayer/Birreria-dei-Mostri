@@ -1,0 +1,82 @@
+{
+	"name": "Effect: Blood Frenzy",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>:@UUID[Compendium.monster-homebrewery.creatures.Actor.TgRYo4fd1m1aQ4td.Item.8szsVBIWiCrxigKj].</p><hr /><p>The bruxa gains a +1 Status bonus to all its attack rolls and damage rolls but is considered @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard}. This frenzy lasts for 1 minute or until the bruxa is rendered @UUID[Compendium.pf2e.conditionitems.fBnFDH2MTzgFijKf]{Unconscious} or is slain (whichever happens first).</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "FlatModifier",
+				"selector": [
+					"attack-roll",
+					"damage-roll"
+				],
+				"value": 1,
+				"type": "status"
+			},
+			{
+				"key": "GrantItem",
+				"uuid": "Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg"
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 1
+		},
+		"duration": {
+			"value": 1,
+			"unit": "minutes",
+			"expiry": "turn-end",
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"img": "icons/skills/wounds/injury-eyes-blood-red-pink.webp",
+	"folder": "z8MbwXKgnZ9PeKjX",
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Effects.Item.BH6fxD89RJRRbZbI",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116997197,
+		"modifiedTime": 1776117278442,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "S7vdzusXllcPgGDk",
+	"sort": 0,
+	"_key": "!items!S7vdzusXllcPgGDk"
+}

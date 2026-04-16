@@ -1,0 +1,808 @@
+{
+	"folder": "hqIrVWSUxA1FCXwI",
+	"name": "Infernal Torturer",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 1,
+		"width": 1,
+		"name": "Infernal Torturer",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 56,
+				"temp": 0,
+				"max": 56,
+				"details": "void healing"
+			},
+			"ac": {
+				"value": 18,
+				"details": ""
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 25,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"immunities": [
+				{
+					"type": "death-effects",
+					"exceptions": []
+				},
+				{
+					"type": "disease",
+					"exceptions": []
+				},
+				{
+					"type": "paralyzed",
+					"exceptions": []
+				},
+				{
+					"type": "poison",
+					"exceptions": []
+				},
+				{
+					"type": "unconscious",
+					"exceptions": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [],
+				"details": ""
+			},
+			"level": {
+				"value": 3
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": {
+				"schema": 0.954,
+				"foundry": "13.351",
+				"system": "7.12.2"
+			}
+		},
+		"abilities": {
+			"str": {
+				"mod": 5
+			},
+			"dex": {
+				"mod": 1
+			},
+			"con": {
+				"mod": 4
+			},
+			"int": {
+				"mod": -5
+			},
+			"wis": {
+				"mod": -3
+			},
+			"cha": {
+				"mod": -5
+			}
+		},
+		"perception": {
+			"details": "Fear Scent (Imprecise) 60 feet",
+			"mod": 6,
+			"senses": [
+				{
+					"type": "darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 12,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 9,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 7,
+				"saveDetail": ""
+			}
+		},
+		"skills": {},
+		"traits": {
+			"value": [
+				"mindless",
+				"undead",
+				"unholy"
+			],
+			"rarity": "common",
+			"size": {
+				"value": "med"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"type": "action",
+			"name": "Fear Scent (Imprecise) 60 feet",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>An infernal torturer can sense the presence @Template[emanation|distance:60]{within 60 feet} of a creature with the @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened} condition by scent as an imprecise sense.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "XmKLGCVQikO7cZda",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {
+				"region-attacher": {
+					"attachRegionToTemplate": false
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!cM1NpvBJ8zSwjz6W.XmKLGCVQikO7cZda"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Void Healing",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "ActiveEffectLike",
+						"mode": "override",
+						"path": "system.attributes.hp.negativeHealing",
+						"value": true
+					}
+				],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "void-healing",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 100000,
+			"flags": {},
+			"_id": "qckLFTRKClxkDTzY",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!cM1NpvBJ8zSwjz6W.qckLFTRKClxkDTzY"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Frightful Presence",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>30 feet @Check[will|dc:17]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.FrightfulPresence]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "Aura",
+						"radius": 30,
+						"slug": "frightful-presence",
+						"traits": [
+							"emotion",
+							"fear",
+							"mental"
+						]
+					}
+				],
+				"traits": {
+					"value": [
+						"aura",
+						"emotion",
+						"fear",
+						"mental"
+					],
+					"otherTags": []
+				},
+				"slug": "frightful-presence",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.etMnv73EIdEZrYYu",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "d5JQu01w3BFP22ID",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!cM1NpvBJ8zSwjz6W.d5JQu01w3BFP22ID"
+		},
+		{
+			"folder": "mApYr7csdxE76Pm7",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Rage",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p><strong>Requirements</strong> The infernal torturer isn't @UUID[Compendium.pf2e.conditionitems.Item.HL2l2VRSaQHu9lUw]{Fatigued} or raging.</p><hr /><p>The infernal torturer enters in a blood induced frenzy, making it more powerful and resilient, at the cost of its defenses:</p><ul><li>The torturer deals 2 additional damage on melee Strikes. This additional damage is halved if its weapon or unarmed attack is agile.</li><li>Its Armor Class is reduced by 1.</li><li>It gains 7 temporary Hit Points.</li></ul><p>Rage lasts for 1 minute, and the torturer can't voluntarily stop raging. When the torturer stop raging, it loses any remaining temporary Hit Points from Rage, and can't gain temporary Hit Points from using the Rage action again for 1 minute.</p><p>@UUID[Compendium.pf2e.feat-effects.Item.MaepXeSHiMoWDm7u]{Effect: Rage Temporary Hit Points Immunity}</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Player Core 2",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"hideIfDisabled": true,
+						"key": "FlatModifier",
+						"predicate": [
+							"self:effect:rage",
+							{
+								"or": [
+									{
+										"not": "item:ranged"
+									},
+									{
+										"and": [
+											"feat:raging-thrower",
+											"item:thrown"
+										]
+									}
+								]
+							}
+						],
+						"selector": "strike-damage",
+						"slug": "rage",
+						"value": 2
+					},
+					{
+						"key": "AdjustModifier",
+						"mode": "multiply",
+						"predicate": [
+							"item:trait:agile"
+						],
+						"priority": 95,
+						"selector": "strike-damage",
+						"slug": "rage",
+						"value": 0.5
+					},
+					{
+						"key": "FlatModifier",
+						"selector": [
+							"ac"
+						],
+						"value": -1,
+						"type": "status",
+						"predicate": [
+							"self:effect:rage"
+						]
+					}
+				],
+				"selfEffect": {
+					"name": "Effect: Rage",
+					"uuid": "Compendium.pf2e.feat-effects.Item.z3uyCMBddrPK5umr"
+				},
+				"traits": {
+					"value": [
+						"concentrate",
+						"emotion",
+						"mental"
+					],
+					"otherTags": []
+				},
+				"slug": "rage",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.actionspf2e.Item.Ah5g9pDwWF9b9VW9",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "9PJmLYgPoZuEyTk1",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!cM1NpvBJ8zSwjz6W.9PJmLYgPoZuEyTk1"
+		},
+		{
+			"type": "action",
+			"name": "Taste for Blood",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>When the infernal torturer critically hits a creature with its halberd Strike, it deals @Damage[1d6[bleed,persistent]] damage.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "Note",
+						"selector": [
+							"halberd-damage"
+						],
+						"outcome": [
+							"criticalSuccess"
+						],
+						"text": "{item|description}"
+					},
+					{
+						"key": "DamageDice",
+						"critical": true,
+						"dieSize": "d6",
+						"diceNumber": 1,
+						"damageType": "bleed",
+						"category": "persistent",
+						"selector": [
+							"halberd-damage"
+						]
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "INnN0TMrLmWNVte1",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!cM1NpvBJ8zSwjz6W.INnN0TMrLmWNVte1"
+		},
+		{
+			"type": "melee",
+			"name": "Halberd",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "RollOption",
+						"option": "versatile",
+						"toggleable": true,
+						"label": "Versatile P",
+						"value": false
+					},
+					{
+						"key": "DamageAlteration",
+						"selectors": [
+							"halberd-damage"
+						],
+						"property": "damage-type",
+						"mode": "override",
+						"value": "piercing",
+						"predicate": [
+							"damage:type:slashing",
+							"versatile"
+						],
+						"slug": "base"
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"reach",
+						"versatile-p"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"HlW3suNY4789GCc8": {
+						"damage": "1d10+6",
+						"damageType": "slashing",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 12
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "Wrhs7vdps0wAVq2l",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!cM1NpvBJ8zSwjz6W.Wrhs7vdps0wAVq2l"
+		},
+		{
+			"type": "melee",
+			"name": "mace",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"shove"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"LeaHbpilww4P2Qpi": {
+						"damage": "2d6+3",
+						"damageType": "bludgeoning",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 10
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "cc3NJpOV5Ao7WBn8",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!cM1NpvBJ8zSwjz6W.cc3NJpOV5Ao7WBn8"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.VyWrO1OwtMVphKJh",
+		"duplicateSource": "Actor.yw4bl1LGPky8u6sR",
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116945262,
+		"modifiedTime": 1776116945262,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "cM1NpvBJ8zSwjz6W",
+	"sort": 0,
+	"_key": "!actors!cM1NpvBJ8zSwjz6W"
+}

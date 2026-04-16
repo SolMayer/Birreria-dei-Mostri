@@ -1,0 +1,23 @@
+{
+	"type": "Item",
+	"folder": null,
+	"name": "Book of Beautiful Horrors",
+	"color": "#265323",
+	"sorting": "a",
+	"_id": "z8MbwXKgnZ9PeKjX",
+	"description": "",
+	"sort": 600000,
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116997181,
+		"modifiedTime": 1776116997208,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"_key": "!folders!z8MbwXKgnZ9PeKjX"
+}

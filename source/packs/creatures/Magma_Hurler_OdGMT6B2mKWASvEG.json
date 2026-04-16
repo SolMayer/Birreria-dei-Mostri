@@ -1,0 +1,691 @@
+{
+	"folder": "hqIrVWSUxA1FCXwI",
+	"name": "Magma Hurler",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 2,
+		"width": 2,
+		"name": "Magma Hurler",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 319,
+				"temp": 0,
+				"max": 319,
+				"details": "Magma Bath"
+			},
+			"ac": {
+				"value": 35,
+				"details": ""
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 25,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"immunities": [
+				{
+					"type": "bleed",
+					"exceptions": []
+				},
+				{
+					"type": "fire",
+					"exceptions": []
+				},
+				{
+					"type": "paralyzed",
+					"exceptions": []
+				},
+				{
+					"type": "poison",
+					"exceptions": []
+				},
+				{
+					"type": "sleep",
+					"exceptions": []
+				}
+			],
+			"resistances": [
+				{
+					"type": "cold",
+					"value": 10,
+					"exceptions": [],
+					"doubleVs": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [
+					"petran",
+					"pyric"
+				],
+				"details": ""
+			},
+			"level": {
+				"value": 14
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"abilities": {
+			"str": {
+				"mod": 8
+			},
+			"dex": {
+				"mod": 3
+			},
+			"con": {
+				"mod": 5
+			},
+			"int": {
+				"mod": 3
+			},
+			"wis": {
+				"mod": 4
+			},
+			"cha": {
+				"mod": 4
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 22,
+			"senses": [
+				{
+					"type": "darkvision"
+				},
+				{
+					"type": "tremorsense",
+					"acuity": "imprecise",
+					"range": 40
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 28,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 25,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 23,
+				"saveDetail": ""
+			}
+		},
+		"skills": {},
+		"traits": {
+			"value": [
+				"earth",
+				"elemental",
+				"fire"
+			],
+			"rarity": "common",
+			"size": {
+				"value": "lg"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"type": "action",
+			"name": "Heathed Body",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>When a creature hits the magma hurler with an unarmed Strike, a non-reach melee weapon Strike or tries to [[/act grapple]], Push, [[/act trip]] the magma hurler or touch it, the target takes @Damage[2d10[fire]] damage (@Check[reflex|dc:31|basic] save)</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"fire",
+						"primal"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.10.0"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "UQizsoYqnhfsng2U",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!OdGMT6B2mKWASvEG.UQizsoYqnhfsng2U"
+		},
+		{
+			"type": "action",
+			"name": "Magma Bath",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>When the magma Hurler is touching or immersed in lava or magma, it gains fast healing equal to its level plus its constitution modifier.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "RollOption",
+						"option": "magmabath",
+						"toggleable": true
+					},
+					{
+						"key": "FastHealing",
+						"value": 19,
+						"predicate": [
+							"magmabath"
+						]
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"fire",
+						"healing",
+						"primal"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.10.0"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "wRnoRzJznlWcybNS",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 100000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!OdGMT6B2mKWASvEG.wRnoRzJznlWcybNS"
+		},
+		{
+			"type": "action",
+			"name": "Lava Swimmer",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>While inside magma, lava or similar materials, the magma hurler gains a swim speed of 60 feet.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "RollOption",
+						"option": "lava-swim",
+						"toggleable": true
+					},
+					{
+						"key": "BaseSpeed",
+						"selector": "swim",
+						"value": 60,
+						"predicate": [
+							"lava-swim"
+						]
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.10.0"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "hLLgUghgIB5JCZAt",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!OdGMT6B2mKWASvEG.hLLgUghgIB5JCZAt"
+		},
+		{
+			"type": "action",
+			"name": "Regurgitate Flame",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The magma hurler vomits hot magma around himself, dealing @Damage[15d6[fire]] damage to all creatures in a @Template[emanation|distance:10] (@Check[reflex|dc:31|basic] save). The magma hurler can't use regurgitate flame again for [[/gmr 1d4 #Duration]]{1d4 rounds}.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate",
+						"fire",
+						"primal"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.10.0"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "NLl49BS6ecash8If",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {
+				"region-attacher": {
+					"attachRegionToTemplate": false
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!OdGMT6B2mKWASvEG.NLl49BS6ecash8If"
+		},
+		{
+			"type": "melee",
+			"name": "Claw",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"agile",
+						"fire",
+						"magical",
+						"reach-10",
+						"unarmed"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"UWPfRNL7D09ZPgxt": {
+						"damage": "2d8+15",
+						"damageType": "slashing",
+						"category": null
+					},
+					"CoeKDAuxkmBDD3Jf": {
+						"damage": "1d8",
+						"damageType": "fire",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 29
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "qgEqqWi1rK3nSK52",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!OdGMT6B2mKWASvEG.qgEqqWi1rK3nSK52"
+		},
+		{
+			"type": "melee",
+			"name": "Magma Hurl",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"fire",
+						"magical",
+						"propulsive"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"JbtbRVz7cKLdxwkh": {
+						"damage": "1d12+12",
+						"damageType": "bludgeoning",
+						"category": null
+					},
+					"BpVgGOPnTy7E85BU": {
+						"damage": "2d12",
+						"damageType": "fire",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 23
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": {
+					"increment": 30,
+					"max": null
+				},
+				"subjectToMAP": true
+			},
+			"_id": "LXV6yXunJs3GTH8P",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!OdGMT6B2mKWASvEG.LXV6yXunJs3GTH8P"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.SR5YBX0hxxkpi2Wm",
+		"duplicateSource": "Actor.yw4bl1LGPky8u6sR",
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116945262,
+		"modifiedTime": 1776116945262,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "OdGMT6B2mKWASvEG",
+	"sort": 0,
+	"_key": "!actors!OdGMT6B2mKWASvEG"
+}

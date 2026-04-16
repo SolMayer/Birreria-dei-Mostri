@@ -1,0 +1,23 @@
+{
+	"type": "Item",
+	"folder": null,
+	"name": "Airship Adventures",
+	"color": "#6b9e9d",
+	"sorting": "a",
+	"_id": "XejFJELhWrSrBMW6",
+	"description": "",
+	"sort": 400000,
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116994023,
+		"modifiedTime": 1776116994043,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"_key": "!folders!XejFJELhWrSrBMW6"
+}

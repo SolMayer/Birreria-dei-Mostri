@@ -1,0 +1,1477 @@
+{
+	"folder": "FUvLmndulCiBj5TR",
+	"name": "Paigoel",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 2,
+		"width": 2,
+		"name": "Paigoel",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 195,
+				"temp": 0,
+				"max": 195,
+				"details": ""
+			},
+			"ac": {
+				"value": 31,
+				"details": ""
+			},
+			"allSaves": {
+				"value": "+1 Status to All Saves vs. Magic"
+			},
+			"speed": {
+				"value": 30,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"immunities": [
+				{
+					"type": "poison",
+					"exceptions": []
+				}
+			],
+			"weaknesses": [
+				{
+					"type": "cold-iron",
+					"value": 7,
+					"exceptions": []
+				},
+				{
+					"type": "holy",
+					"value": 14,
+					"exceptions": []
+				}
+			],
+			"resistances": [
+				{
+					"type": "fire",
+					"value": 7,
+					"exceptions": [],
+					"doubleVs": []
+				},
+				{
+					"type": "physical",
+					"value": 8,
+					"exceptions": [
+						"magical"
+					],
+					"doubleVs": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [
+					"chthonian",
+					"common"
+				],
+				"details": "Telepathy 100 Feet"
+			},
+			"level": {
+				"value": 11
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"abilities": {
+			"str": {
+				"mod": 7
+			},
+			"dex": {
+				"mod": 5
+			},
+			"con": {
+				"mod": 5
+			},
+			"int": {
+				"mod": 5
+			},
+			"wis": {
+				"mod": 3
+			},
+			"cha": {
+				"mod": 3
+			}
+		},
+		"perception": {
+			"details": "See the Unseen",
+			"mod": 21,
+			"senses": [
+				{
+					"type": "darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 24,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 19,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 21,
+				"saveDetail": ""
+			}
+		},
+		"skills": {
+			"athletics": {
+				"base": 21,
+				"special": []
+			},
+			"thievery": {
+				"base": 23,
+				"special": []
+			}
+		},
+		"traits": {
+			"value": [
+				"demon",
+				"fiend",
+				"unholy"
+			],
+			"rarity": "rare",
+			"size": {
+				"value": "lg"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"name": "At-Will Spells",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AtWillSpells]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "at-will-spells",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.2YRDYVnC1eljaXKK",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "9SBGwA7f2WJJqdTc",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.9SBGwA7f2WJJqdTc"
+		},
+		{
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"name": "Darkvision",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "darkvision",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "al1dGwpauTOpnIwJ",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.al1dGwpauTOpnIwJ"
+		},
+		{
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"name": "Telepathy 100 Feet",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Telepathy]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [
+						"aura",
+						"magical",
+						"mental"
+					],
+					"otherTags": []
+				},
+				"slug": "telepathy",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kdhbPaBMK1d1fpbA",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "wynU6L6Z1mcRwdS0",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.wynU6L6Z1mcRwdS0"
+		},
+		{
+			"img": "systems/pf2e/icons/actions/Reaction.webp",
+			"name": "Reactive Strike",
+			"system": {
+				"actionType": {
+					"value": "reaction"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "reactive-strike",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 300000,
+			"flags": {},
+			"_id": "SQ10hJrfIm5kRigN",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.SQ10hJrfIm5kRigN"
+		},
+		{
+			"type": "melee",
+			"name": "Longsword",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "RollOption",
+						"option": "parry",
+						"toggleable": true,
+						"label": "Parry",
+						"value": false
+					},
+					{
+						"key": "RollOption",
+						"option": "versatile",
+						"toggleable": true,
+						"label": "Versatile P",
+						"value": false
+					},
+					{
+						"key": "FlatModifier",
+						"selector": [
+							"ac"
+						],
+						"value": 1,
+						"type": "circumstance",
+						"predicate": [
+							"parry"
+						]
+					},
+					{
+						"key": "DamageAlteration",
+						"mode": "override",
+						"property": "damage-type",
+						"selectors": [
+							"longsword-damage"
+						],
+						"value": "piercing",
+						"predicate": [
+							"damage:type:slashing",
+							"versatile"
+						]
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"magical",
+						"parry",
+						"reach",
+						"spirit",
+						"unholy",
+						"versatile-p"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"q6fGmZZCB7l8bwAm": {
+						"damage": "2d10+10",
+						"damageType": "slashing",
+						"category": null
+					},
+					"9v2cVWY9aWLVmwU1": {
+						"damage": "1d10",
+						"damageType": "spirit",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 24
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "YL45L7o6W6disAV6",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.YL45L7o6W6disAV6"
+		},
+		{
+			"name": "Divine Innate Spells",
+			"type": "spellcastingEntry",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": ""
+				},
+				"rules": [],
+				"slug": null,
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null
+				},
+				"traits": {
+					"otherTags": []
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"ability": {
+					"value": "cha"
+				},
+				"spelldc": {
+					"value": 19,
+					"dc": 27
+				},
+				"tradition": {
+					"value": "divine"
+				},
+				"prepared": {
+					"value": "innate"
+				},
+				"showSlotlessLevels": {
+					"value": false
+				},
+				"proficiency": {
+					"value": 1
+				},
+				"slots": {
+					"slot0": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot1": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot2": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot3": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot4": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot5": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot6": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot7": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot8": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot9": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot10": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					},
+					"slot11": {
+						"prepared": [],
+						"value": 0,
+						"max": 0
+					}
+				},
+				"autoHeightenLevel": {
+					"value": null
+				}
+			},
+			"_id": "ROuH8aGv8oqbd0lN",
+			"img": "systems/pf2e/icons/default-icons/spellcastingEntry.svg",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.ROuH8aGv8oqbd0lN"
+		},
+		{
+			"folder": "lPzcDrjGDFbzuF2r",
+			"img": "systems/pf2e/icons/spells/see-invisibility.webp",
+			"name": "See the Unseen (Constant)",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>Your gaze pierces through illusions and finds @UUID[Compendium.pf2e.conditionitems.Item.zJxUflt9np0q4yML]{Invisible} creatures and spirits. You can see invisible creatures as though they weren't invisible, although their features are blurred, making them @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and difficult to identify. You can also see incorporeal creatures, like ghosts, phased through an object from within 10 feet of an object's surface as blurry shapes seen through those objects. Subtler clues also grant you a +2 status bonus to checks you make to disbelieve illusions.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> This spell has a duration of 8 hours.</p>\n<p>@UUID[Compendium.pf2e.spell-effects.Item.T5bk6UH7yuYog1Fp]{Spell Effect: See the Unseen}</p>"
+				},
+				"rules": [],
+				"slug": "see-the-unseen",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate",
+						"manipulate",
+						"revelation"
+					],
+					"rarity": "common",
+					"traditions": [
+						"arcane",
+						"divine",
+						"occult"
+					]
+				},
+				"publication": {
+					"title": "Pathfinder Player Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 2
+				},
+				"requirements": "",
+				"target": {
+					"value": ""
+				},
+				"range": {
+					"value": ""
+				},
+				"area": null,
+				"time": {
+					"value": "2"
+				},
+				"duration": {
+					"value": "10 minutes",
+					"sustained": false
+				},
+				"damage": {},
+				"defense": null,
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": "ROuH8aGv8oqbd0lN",
+					"heightenedLevel": 6
+				},
+				"counteraction": false
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "0dOQKsj3acatkdG3",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.0dOQKsj3acatkdG3"
+		},
+		{
+			"img": "systems/pf2e/icons/spells/see-invisibility.webp",
+			"name": "Spell Effect: See the Unseen",
+			"system": {
+				"description": {
+					"value": "<p>Granted by @UUID[Compendium.pf2e.spells-srd.Item.jwK43yKsHTkJQvQ9]{See the Unseen}</p>\n<p>You can see invisible creatures as though they weren't invisible, although their features are blurred, making them @UUID[Compendium.pf2e.conditionitems.Item.DmAIPqOBomZ7H95W]{Concealed} and difficult to identify. You also gain a +2 status bonus to checks you make to disbelieve illusions.</p>",
+					"gm": ""
+				},
+				"duration": {
+					"expiry": "turn-start",
+					"sustained": false,
+					"unit": "minutes",
+					"value": 10
+				},
+				"level": {
+					"value": 1
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Player Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "Sense",
+						"selector": "see-invisibility"
+					},
+					{
+						"key": "FlatModifier",
+						"predicate": [
+							"illusion"
+						],
+						"selector": [
+							"perception",
+							"will"
+						],
+						"type": "status",
+						"value": 2
+					}
+				],
+				"start": {
+					"value": 0,
+					"initiative": null
+				},
+				"tokenIcon": {
+					"show": true
+				},
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "spell-effect-see-the-unseen",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"unidentified": false,
+				"badge": null,
+				"fromSpell": false,
+				"context": {
+					"origin": {
+						"actor": "Actor.hAwQV6xhLq7A0ci3",
+						"token": null,
+						"item": "Actor.hAwQV6xhLq7A0ci3.Item.0dOQKsj3acatkdG3",
+						"spellcasting": {
+							"attribute": {
+								"type": "cha",
+								"mod": 3
+							},
+							"tradition": "divine"
+						},
+						"rollOptions": []
+					},
+					"target": null,
+					"roll": null
+				}
+			},
+			"type": "effect",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spell-effects.Item.T5bk6UH7yuYog1Fp",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "U9FP7KTQeW4x8LaT",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.U9FP7KTQeW4x8LaT"
+		},
+		{
+			"folder": "7cyoYPoPYA01mErU",
+			"img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+			"name": "Translocate (AT Will)",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>"
+				},
+				"rules": [],
+				"slug": "translocate",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate",
+						"manipulate",
+						"teleportation"
+					],
+					"rarity": "common",
+					"traditions": [
+						"arcane",
+						"occult"
+					]
+				},
+				"publication": {
+					"title": "Pathfinder Player Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 4
+				},
+				"requirements": "",
+				"target": {
+					"value": ""
+				},
+				"range": {
+					"value": "120 feet"
+				},
+				"area": null,
+				"time": {
+					"value": "2"
+				},
+				"duration": {
+					"value": "",
+					"sustained": false
+				},
+				"damage": {},
+				"defense": null,
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": "ROuH8aGv8oqbd0lN",
+					"heightenedLevel": 4
+				},
+				"counteraction": false,
+				"heightening": {
+					"levels": {
+						"5": {
+							"range": {
+								"value": "1 mile"
+							}
+						}
+					},
+					"type": "fixed"
+				}
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "AAZQcKlp0TnzB5Xx",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.AAZQcKlp0TnzB5Xx"
+		},
+		{
+			"folder": "7cyoYPoPYA01mErU",
+			"img": "icons/magic/symbols/ring-circle-smoke-blue.webp",
+			"name": "Translocate",
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>You instantly transport yourself and any items you're wearing and holding from your current space to an unoccupied space within range you can see. If this would bring another creature with you—even if you're carrying it in an extradimensional container—the spell is lost.</p>\n<hr />\n<p><strong>Heightened (5th)</strong> The range increases to 1 mile. You don't need to be able to see your destination, as long as you have been there in the past and know its relative location and distance from you. You are then temporarily immune for 1 hour.</p>"
+				},
+				"rules": [],
+				"slug": "translocate",
+				"_migration": {
+					"version": 0.955,
+					"lastMigration": null,
+					"previous": null
+				},
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"concentrate",
+						"manipulate",
+						"teleportation"
+					],
+					"rarity": "common",
+					"traditions": [
+						"arcane",
+						"occult"
+					]
+				},
+				"publication": {
+					"title": "Pathfinder Player Core",
+					"authors": "",
+					"license": "ORC",
+					"remaster": true
+				},
+				"level": {
+					"value": 4
+				},
+				"requirements": "",
+				"target": {
+					"value": ""
+				},
+				"range": {
+					"value": "120 feet"
+				},
+				"area": null,
+				"time": {
+					"value": "2"
+				},
+				"duration": {
+					"value": "",
+					"sustained": false
+				},
+				"damage": {},
+				"defense": null,
+				"cost": {
+					"value": ""
+				},
+				"location": {
+					"value": "ROuH8aGv8oqbd0lN",
+					"heightenedLevel": 5
+				},
+				"counteraction": false,
+				"heightening": {
+					"levels": {
+						"5": {
+							"range": {
+								"value": "1 mile"
+							}
+						}
+					},
+					"type": "fixed"
+				}
+			},
+			"type": "spell",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.spells-srd.Item.VlNcjmYyu95vOUe8",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"sort": 0,
+			"flags": {},
+			"_id": "seH8mA5fFvSY1jHj",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.seH8mA5fFvSY1jHj"
+		},
+		{
+			"type": "action",
+			"name": "Double Slice",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The paigoel lash out at its foe with both weapons. The paigoel makes two longsword Strikes, each using the paigoel's current multiple attack penalty. Both Strikes must have the same target. The second Strike takes a –2 penalty. If both attacks hit, the paigoel combines their damage, and then add any other applicable effects from both weapons. The paigoel combines the damage from both Strikes and apply resistances and weaknesses only once. This counts as two attacks when calculating the paigoel's multiple attack penalty.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "RollOption",
+						"option": "double-slice",
+						"toggleable": true,
+						"label": "Second Double Slice Attack",
+						"value": false
+					},
+					{
+						"key": "FlatModifier",
+						"selector": [
+							"longsword-attack"
+						],
+						"value": -2,
+						"type": "circumstance",
+						"predicate": [
+							"double-slice"
+						]
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"flourish"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "jV7JK85Z8r5khkSV",
+			"img": "systems/pf2e/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 100000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.jV7JK85Z8r5khkSV"
+		},
+		{
+			"type": "action",
+			"name": "Hail of Darts",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The paigoel shoots a fan of demoniac darts in a @Template[cone|distance:30], dealing @Damage[3d6[piercing],3d6[spirit]] damage to all creatures in the area (@Check[reflex|dc:27|basic|options:damaging-effect,area-effect] save).</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"manipulate",
+						"unholy"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "UeZsCmVXIuWnXNUV",
+			"img": "systems/pf2e/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 200000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.UeZsCmVXIuWnXNUV"
+		},
+		{
+			"type": "action",
+			"name": "Spring and Strike",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The paigoel crouches and jumpes up to 30 feet in the air, before landing in a free space within 30 feet of its original space. If the paigoel lands within reach of a creature, it can attempt a longsword Strike against that creature. The paigoel can't use Spring and Strike again for [[/gmr 1d4 #Duration]]{1d4 rounds}.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"move"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "hm3jS6onO4xKjQ4h",
+			"img": "systems/pf2e/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 400000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.hm3jS6onO4xKjQ4h"
+		},
+		{
+			"type": "action",
+			"name": "Storm of Swords",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The paigoel lashes out in a full attack, dealing @Damage[6d6[slashing],6d6[spirit]] damage to all creatures in a @Template[emanation|distance:10], who must attempt at a @Check[reflex|dc:27] save. The paigoel can't use Storm of Swords again for [[/gmr 1d4 #Duration]]{1d4 rounds}. This counts as three attacks when calculating the paigoel's multiple attack penalty.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature takes half damage.</p><p><strong>Failure</strong> The creature takes full damage.</p><p><strong>Critical Failure</strong> The creature takes double damage and is @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of the paigoel's next turn.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"manipulate",
+						"unholy"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": 3
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "v3uaXdnwIXwEeENs",
+			"img": "systems/pf2e/icons/actions/ThreeActions.webp",
+			"folder": null,
+			"sort": 500000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.v3uaXdnwIXwEeENs"
+		},
+		{
+			"type": "action",
+			"name": "Guardian of the Abyss",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>Whenever a creature critically succeeds at a [[/act disarm]] attempt or robs the paigoel of the treasure it is guarding, the piagoel takes @Damage[3d8[mental]] damage. For one hour, a creature can deal @Damage[3d8[mental]] damage to the paigoel with a [[/act demoralize]] check incorporating the theft in the check.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "Gua5XOQ9O7RTP3kg",
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.Gua5XOQ9O7RTP3kg"
+		},
+		{
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"name": "+1 Status to All Saves vs. Magic",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "FlatModifier",
+						"predicate": [
+							"item:magical"
+						],
+						"selector": "saving-throw",
+						"type": "status",
+						"value": 1
+					}
+				],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "1-status-to-all-saves-vs-magic",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "ijgJdoJslhnGRkfw",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kgQCQAFGQKqiDSoL.ijgJdoJslhnGRkfw"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.hAwQV6xhLq7A0ci3",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116958373,
+		"modifiedTime": 1776116958373,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "kgQCQAFGQKqiDSoL",
+	"sort": 0,
+	"_key": "!actors!kgQCQAFGQKqiDSoL"
+}

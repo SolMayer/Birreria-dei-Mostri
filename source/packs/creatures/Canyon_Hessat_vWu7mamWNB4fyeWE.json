@@ -1,0 +1,745 @@
+{
+	"folder": "3TkvZzAM5S6Dtt8s",
+	"name": "Canyon Hessat",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 4,
+		"width": 4,
+		"name": "Canyon Hessat",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": true,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 175,
+				"temp": 0,
+				"max": 175,
+				"details": ""
+			},
+			"ac": {
+				"value": 29,
+				"details": ""
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 0,
+				"otherSpeeds": [
+					{
+						"type": "burrow",
+						"value": 30
+					},
+					{
+						"type": "fly",
+						"value": 60
+					}
+				],
+				"details": ""
+			}
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [],
+				"details": ""
+			},
+			"level": {
+				"value": 10
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"abilities": {
+			"str": {
+				"mod": 3
+			},
+			"dex": {
+				"mod": 7
+			},
+			"con": {
+				"mod": 5
+			},
+			"int": {
+				"mod": -4
+			},
+			"wis": {
+				"mod": 5
+			},
+			"cha": {
+				"mod": -2
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 19,
+			"senses": [
+				{
+					"type": "darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 16,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 22,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 16,
+				"saveDetail": ""
+			}
+		},
+		"skills": {
+			"athletics": {
+				"base": 19,
+				"special": []
+			},
+			"stealth": {
+				"base": 25,
+				"special": []
+			}
+		},
+		"traits": {
+			"value": [
+				"animal"
+			],
+			"rarity": "common",
+			"size": {
+				"value": "grg"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Darkvision",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "darkvision",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "OygVsLkCrgnYNiTg",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!vWu7mamWNB4fyeWE.OygVsLkCrgnYNiTg"
+		},
+		{
+			"type": "melee",
+			"name": "Jaws",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"acid",
+						"agile",
+						"reach-50",
+						"unarmed"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"3tMT8PuP66Wtjb3x": {
+						"damage": "1d10+11",
+						"damageType": "piercing",
+						"category": null
+					},
+					"TjI9ZFJXh2YLMkhR": {
+						"damage": "1d10",
+						"damageType": "acid",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 23
+				},
+				"attackEffects": {
+					"value": [
+						"grab"
+					]
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "vgDXOAUnbjg1OBrt",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!vWu7mamWNB4fyeWE.vgDXOAUnbjg1OBrt"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Grab",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "grab",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "llmHfxmeow9gj88K",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!vWu7mamWNB4fyeWE.llmHfxmeow9gj88K"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Swallow Whole",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>[Large], @Damage[(4d8+3)[bludgeoning]], Rupture [22]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [
+						"attack"
+					],
+					"otherTags": []
+				},
+				"slug": "swallow-whole",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "xexT0umMjhnGwx5Q",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!vWu7mamWNB4fyeWE.xexT0umMjhnGwx5Q"
+		},
+		{
+			"type": "action",
+			"name": "Siege Monster",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>Whenever the canyon hessat targets a structure, vehicle or unattended object, the canyon hessat considers the structure, vehicle or object's hardness as 5 point lesser (to a minimum of 0).</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.1"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "9HVk94Umm4EQq7XJ",
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!vWu7mamWNB4fyeWE.9HVk94Umm4EQq7XJ"
+		},
+		{
+			"name": "Surprise Attack",
+			"type": "action",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"effects": [],
+			"folder": "Dw10oTeavqmco1dX",
+			"sort": 387500,
+			"flags": {
+				"core": {}
+			},
+			"system": {
+				"description": {
+					"gm": "",
+					"value": "<p>On the first round of combat, if the canyon hessat rolls Stealth for initiative, creatures that haven't acted are @Compendium[pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard} to the canyon hessat.</p>"
+				},
+				"rules": [
+					{
+						"key": "EphemeralEffect",
+						"predicate": [
+							"encounter:round:1",
+							{
+								"lt": [
+									"self:participant:initiative:rank",
+									"target:participant:initiative:rank"
+								]
+							},
+							{
+								"or": [
+									"self:participant:initiative:stat:stealth"
+								]
+							}
+						],
+						"selectors": [
+							"strike-attack-roll",
+							"spell-attack-roll",
+							"strike-damage",
+							"attack-spell-damage"
+						],
+						"uuid": "Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg"
+					}
+				],
+				"slug": null,
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.939,
+						"foundry": "13.351",
+						"system": "7.12.1"
+					}
+				},
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"publication": {
+					"title": "Mercenary Marketplace Volume 1",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"actionType": {
+					"value": "passive"
+				},
+				"category": "offensive",
+				"actions": {
+					"value": null
+				},
+				"deathNote": false
+			},
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e-mercenary-marketplace-vol1.mmv1-abilities.Item.12eIZcfkKDZHo0qf",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"_id": "Pa4eLsi3WFCPaclf",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!vWu7mamWNB4fyeWE.Pa4eLsi3WFCPaclf"
+		},
+		{
+			"type": "action",
+			"name": "Acid Spray",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>the canyon hessat sprays acid in a @Template[cone|distance:30], dealing @Damage[11d6[acid]|options:area-damage] damage to all affected creatures (@Check[reflex|dc:26|basic|options:damaging-effect,area-effect] save). The canyon hessat cannot use its Acid Spray again for [[/gmr 1d6 #Duration]]{1d6 rounds}.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"acid"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.1"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "bbss9mH6YHteZFf5",
+			"img": "systems/pf2e/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {
+				"region-attacher": {
+					"attachRegionToTemplate": false
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!vWu7mamWNB4fyeWE.bbss9mH6YHteZFf5"
+		},
+		{
+			"type": "action",
+			"name": "Tether",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The canyon hessat attempts a jaws Strike against a vehicle within reach. If it hits, the vehicle is dragged by 10 feet towards the canyon hessat or by 20 feet if the hessat critically hits.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.1"
+					}
+				},
+				"actions": {
+					"value": 3
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "Y4NZEpP3kEMRSHC4",
+			"img": "systems/pf2e/icons/actions/ThreeActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!vWu7mamWNB4fyeWE.Y4NZEpP3kEMRSHC4"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.PTT4fiyypkZsypkz",
+		"duplicateSource": "Actor.RLgvichJkjb77SGn",
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116949280,
+		"modifiedTime": 1776116949280,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "vWu7mamWNB4fyeWE",
+	"sort": 0,
+	"_key": "!actors!vWu7mamWNB4fyeWE"
+}

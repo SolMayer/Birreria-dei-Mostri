@@ -1,0 +1,91 @@
+{
+	"folder": "z8MbwXKgnZ9PeKjX",
+	"name": "Effect: Kikimore's Aggressive Pheromone",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.LX8ZK8tpVPQMpLv2.Item.IWdCPiYJzmL8iUQQ]</p><hr /><p>The affected creatures is @UUID[Compendium.pf2e.conditionitems.AdPVz7rbaVSRxHFg]{Fascinated} towards the kikimore, considering them allies. The fascinated creature has a +1 Status to their attack rolls against creatures who are below their maximum hit points.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "RollOption",
+				"option": "pheromone",
+				"toggleable": true,
+				"label": "target is below its maximum hit points"
+			},
+			{
+				"key": "FlatModifier",
+				"value": 1,
+				"type": "status",
+				"selector": [
+					"attack-roll"
+				],
+				"predicate": [
+					"pheromone"
+				]
+			},
+			{
+				"key": "GrantItem",
+				"uuid": "Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg",
+				"allowDuplicate": false
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 1
+		},
+		"duration": {
+			"value": -1,
+			"unit": "unlimited",
+			"expiry": null,
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"img": "icons/magic/air/wind-tornado-cyclone-red-orange.webp",
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Effects.Item.lj0Vd4zWQHXPBeIB",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116997197,
+		"modifiedTime": 1776117351397,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "jgSrpQsHH8ZvgCXy",
+	"sort": 0,
+	"_key": "!items!jgSrpQsHH8ZvgCXy"
+}

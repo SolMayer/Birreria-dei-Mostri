@@ -1,0 +1,567 @@
+{
+	"folder": "4fgENENR96vhokBj",
+	"name": "Follower of Bennu",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 1,
+		"width": 1,
+		"name": "Follower of Bennu",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 30,
+				"temp": 0,
+				"max": 30,
+				"details": ""
+			},
+			"ac": {
+				"value": 17,
+				"details": ""
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 30,
+				"otherSpeeds": [],
+				"details": ""
+			}
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [
+					"common"
+				],
+				"details": ""
+			},
+			"level": {
+				"value": 2
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"abilities": {
+			"str": {
+				"mod": 3
+			},
+			"dex": {
+				"mod": 4
+			},
+			"con": {
+				"mod": 3
+			},
+			"int": {
+				"mod": 1
+			},
+			"wis": {
+				"mod": 1
+			},
+			"cha": {
+				"mod": 1
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 8,
+			"senses": [],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 5,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 11,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 8,
+				"saveDetail": ""
+			}
+		},
+		"skills": {
+			"religion": {
+				"base": 8,
+				"special": []
+			},
+			"stealth": {
+				"base": 7,
+				"special": []
+			}
+		},
+		"traits": {
+			"value": [
+				"humanoid",
+				"werecreature"
+			],
+			"rarity": "rare",
+			"size": {
+				"value": "med"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"type": "action",
+			"name": "Renewed in Flame",
+			"system": {
+				"actionType": {
+					"value": "reaction"
+				},
+				"description": {
+					"value": "<p><strong>Frequency</strong> Once per day;</p><p><strong>Trigger</strong> the Follower of Bennu is reduced to 0 hp.</p><hr /><p>the Follower of Bennu explodes in a burst of divine flames, dealing @Damage[3d6[fire]] damage in a @Template[burst|distance:10] (@Check[reflex|dc:15|basic] save) and returns to full hp. If the remains of a Follower of Bennu are cremated within 1 week from its death, the Follower of Bennu returns to life with 1 hp.</p><p></p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"divine",
+						"fire",
+						"healing"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "M6jgerjtdfMJKLi6",
+			"img": "systems/pf2e/icons/actions/Reaction.webp",
+			"folder": null,
+			"sort": 100000,
+			"flags": {
+				"aoe-easy-resolve": {
+					"ignoreAoE": false,
+					"useOverride": false,
+					"provideTemplate": false,
+					"saveType": "reflex",
+					"saveDC": null,
+					"useCustomDamage": false,
+					"customDamage": "",
+					"customDamageType": "",
+					"multipliers": {
+						"criticalSuccess": 0,
+						"success": 0.5,
+						"failure": 1,
+						"criticalFailure": 2
+					}
+				},
+				"region-attacher": {
+					"attachRegionToTemplate": false
+				}
+			},
+			"_stats": {
+				"compendiumSource": "Actor.k9DExGYBzeTZlgV4.Item.M6jgerjtdfMJKLi6",
+				"duplicateSource": "Actor.k9DExGYBzeTZlgV4.Item.M6jgerjtdfMJKLi6",
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!QETjrxoyBI41Ae0G.M6jgerjtdfMJKLi6"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Change Shape",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>Human with Fist (+9 to hit, @Damage[1d8+4[bludgeoning]] damage or<br />Heron with Flying Speed 50 feet and Beal strike (+9 to hit, @Damage[1d8+4[piercing]] damage).</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.ChangeShape]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "RollOption",
+						"option": "change-shape",
+						"toggleable": true,
+						"alwaysActive": true,
+						"suboptions": [
+							{
+								"label": "Humanoid Form",
+								"value": "humanoid"
+							},
+							{
+								"label": "Hybrid Form",
+								"value": "hybrid"
+							},
+							{
+								"label": "Heron Form",
+								"value": "heron"
+							}
+						],
+						"value": true,
+						"selection": "hybrid"
+					},
+					{
+						"key": "BaseSpeed",
+						"selector": "fly",
+						"value": 50,
+						"predicate": [
+							{
+								"or": [
+									"change-shape:hybrid",
+									"change-shape:heron"
+								]
+							}
+						]
+					},
+					{
+						"key": "Strike",
+						"category": "unarmed",
+						"attackModifier": 9,
+						"damage": {
+							"base": {
+								"damageType": "bludgeoning",
+								"dice": 1,
+								"die": "d8",
+								"modifier": "4"
+							}
+						},
+						"traits": [
+							"agile",
+							"finesse",
+							"nonlethal",
+							"unarmed"
+						],
+						"label": "Fist",
+						"slug": "fist",
+						"predicate": [
+							{
+								"or": [
+									"change-shape:humanoid",
+									"change-shape:hybrid"
+								]
+							}
+						]
+					},
+					{
+						"key": "Strike",
+						"category": "unarmed",
+						"attackModifier": 9,
+						"damage": {
+							"base": {
+								"damageType": "piercing",
+								"dice": 1,
+								"die": "d8",
+								"modifier": "4"
+							}
+						},
+						"traits": [
+							"agile",
+							"unarmed"
+						],
+						"label": "Beak",
+						"slug": "beak",
+						"predicate": [
+							{
+								"or": [
+									"change-shape:hybrid",
+									"change-shape:heron"
+								]
+							}
+						]
+					},
+					{
+						"key": "Strike",
+						"category": "martial",
+						"attackModifier": 9,
+						"damage": {
+							"base": {
+								"damageType": "piercing",
+								"dice": 1,
+								"die": "d6",
+								"modifier": "6"
+							}
+						},
+						"traits": [
+							"agile",
+							"finesse",
+							"versatile-s"
+						],
+						"label": "shortsword",
+						"slug": "shortsword",
+						"predicate": [
+							{
+								"or": [
+									"change-shape:humanoid",
+									"change-shape:hybrid"
+								]
+							}
+						]
+					},
+					{
+						"key": "RollOption",
+						"option": "versatile",
+						"toggleable": true,
+						"label": "Versatile S",
+						"predicate": [
+							{
+								"or": [
+									"change-shape:humanoid",
+									"change-shape:hybrid"
+								]
+							}
+						],
+						"value": false
+					},
+					{
+						"key": "DamageAlteration",
+						"mode": "override",
+						"property": "damage-type",
+						"value": "slashing",
+						"predicate": [
+							"damage:type:piercing",
+							"versatile"
+						],
+						"selectors": [
+							"shortsword-damage"
+						]
+					},
+					{
+						"key": "Strike",
+						"category": "simple",
+						"attackModifier": 9,
+						"damage": {
+							"base": {
+								"damageType": "bludgeoning",
+								"dice": 1,
+								"die": "d6",
+								"modifier": "6"
+							}
+						},
+						"traits": [
+							"propulsive",
+							"reload-1"
+						],
+						"range": {
+							"increment": 50
+						},
+						"label": "Slingshot",
+						"slug": "slingshot",
+						"predicate": [
+							"change-shape:humanoid"
+						]
+					}
+				],
+				"traits": {
+					"value": [
+						"concentrate",
+						"polymorph"
+					],
+					"otherTags": []
+				},
+				"slug": "change-shape",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.eQM5hQ1W3d1uen97",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {
+				"aoe-easy-resolve": {
+					"ignoreAoE": false,
+					"useOverride": false,
+					"provideTemplate": false,
+					"saveType": "reflex",
+					"saveDC": null,
+					"useCustomDamage": false,
+					"customDamage": "",
+					"customDamageType": "",
+					"multipliers": {
+						"criticalSuccess": 0,
+						"success": 0.5,
+						"failure": 1,
+						"criticalFailure": 2
+					}
+				}
+			},
+			"_id": "kGekxckWiA56EvqG",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!QETjrxoyBI41Ae0G.kGekxckWiA56EvqG"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.k9DExGYBzeTZlgV4",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116947603,
+		"modifiedTime": 1776116947603,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "QETjrxoyBI41Ae0G",
+	"sort": 0,
+	"_key": "!actors!QETjrxoyBI41Ae0G"
+}

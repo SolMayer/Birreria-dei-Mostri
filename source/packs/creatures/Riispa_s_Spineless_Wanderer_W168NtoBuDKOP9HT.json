@@ -1,0 +1,673 @@
+{
+	"folder": "hqIrVWSUxA1FCXwI",
+	"name": "Riispa's Spineless Wanderer",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"splatter": {
+				"bloodColor": ""
+			},
+			"wall-height": {
+				"tokenHeight": 0
+			},
+			"LocknKey": {
+				"LPFormulaFlag": "",
+				"LPFormulaOverrideFlag": false,
+				"LBFormulaFlag": "",
+				"LBFormulaOverrideFlag": false,
+				"PickPocketFormulaFlag": "",
+				"PickPocketFormulaOverrideFlag": false,
+				"LootFormulaFlag": "",
+				"PickPocketDCFlag": null,
+				"MATTTriggerTileFlag": "",
+				"MATTTriggerConditionsFlag": {
+					"LockuseKey": "never",
+					"LockusePasskey": "never",
+					"LockusePick": "never",
+					"LockuseBreak": "never",
+					"LockuseFree": "never",
+					"UsePickPocket": "never"
+				}
+			},
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 1,
+		"width": 1,
+		"name": "Riispa's Spineless Wanderer",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 0,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 20,
+				"temp": 0,
+				"max": 20,
+				"details": "Void Healing"
+			},
+			"ac": {
+				"value": 16,
+				"details": ""
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 35,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"immunities": [
+				{
+					"type": "bleed"
+				},
+				{
+					"type": "death-effects",
+					"exceptions": []
+				},
+				{
+					"type": "disease",
+					"exceptions": []
+				},
+				{
+					"type": "paralyzed",
+					"exceptions": []
+				},
+				{
+					"type": "poison",
+					"exceptions": []
+				},
+				{
+					"type": "precision",
+					"exceptions": []
+				},
+				{
+					"type": "unconscious",
+					"exceptions": []
+				}
+			],
+			"resistances": [
+				{
+					"type": "bludgeoning",
+					"value": 3,
+					"exceptions": [],
+					"doubleVs": []
+				}
+			],
+			"weaknesses": [
+				{
+					"type": "holy",
+					"value": 3,
+					"exceptions": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [],
+				"details": ""
+			},
+			"level": {
+				"value": 1
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": {
+				"schema": null,
+				"foundry": "13.351",
+				"system": "7.12.2"
+			}
+		},
+		"abilities": {
+			"str": {
+				"mod": 1
+			},
+			"dex": {
+				"mod": 4
+			},
+			"con": {
+				"mod": 3
+			},
+			"int": {
+				"mod": -5
+			},
+			"wis": {
+				"mod": -5
+			},
+			"cha": {
+				"mod": -5
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 10,
+			"senses": [
+				{
+					"type": "darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 7,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 10,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 2,
+				"saveDetail": ""
+			}
+		},
+		"skills": {
+			"athletics": {
+				"base": 4,
+				"special": []
+			}
+		},
+		"traits": {
+			"value": [
+				"mindless",
+				"undead",
+				"unholy"
+			],
+			"rarity": "common",
+			"size": {
+				"value": "med"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"name": "Slam",
+			"type": "melee",
+			"system": {
+				"damageRolls": {
+					"strikeDamageID": {
+						"damage": "1d6+2",
+						"damageType": "bludgeoning",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 7
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"unarmed"
+					],
+					"config": {}
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"action": "strike",
+				"area": null,
+				"attackEffects": {
+					"value": [
+						"grab"
+					]
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "tt46XrN9CXWyZ7QL",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!W168NtoBuDKOP9HT.tt46XrN9CXWyZ7QL"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Constrict",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>@Damage[(1d6+3)[bludgeoning]], @Check[fortitude|dc:14|basic]</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Constrict]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "constrict",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.g26YiEIfSHCpLocV",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "6bIIGov8WWPsTMRI",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!W168NtoBuDKOP9HT.6bIIGov8WWPsTMRI"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Grab",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "grab",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "u2UKqI4NShaZ0cn1",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!W168NtoBuDKOP9HT.u2UKqI4NShaZ0cn1"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Void Healing",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.NegativeHealing]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "ActiveEffectLike",
+						"mode": "override",
+						"path": "system.attributes.hp.negativeHealing",
+						"value": true
+					}
+				],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "void-healing",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.TTCw5NusiSSkJU1x",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 100000,
+			"flags": {},
+			"_id": "MxmCC2uTA5wdDP0a",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!W168NtoBuDKOP9HT.MxmCC2uTA5wdDP0a"
+		},
+		{
+			"type": "action",
+			"name": "Spineless Mass",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>A spineless wanderer can move through a space as narrow as 6 inch without squeezing.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "O1M9LBxg7ECWR6m2",
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!W168NtoBuDKOP9HT.O1M9LBxg7ECWR6m2"
+		},
+		{
+			"type": "action",
+			"name": "Undead Fortitude",
+			"system": {
+				"actionType": {
+					"value": "reaction"
+				},
+				"description": {
+					"value": "<p><strong>Frequency</strong> Once per day;</p><p><strong>Trigger</strong> the spineless wanderer would be slain by a non critical hit or by a non holy effect;</p><hr /><p> The spineless wanderer attempts a @Check[flat|dc:15] check. If it suceeds is instead reduced to @Damage[1[untyped,healing]] hp.</p><p></p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "4z4n97ky71ZFD9fR",
+			"img": "systems/pf2e/icons/actions/Reaction.webp",
+			"folder": null,
+			"sort": 100000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!W168NtoBuDKOP9HT.4z4n97ky71ZFD9fR"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.gW6kWKjuQf0gUXZ7",
+		"duplicateSource": "Actor.yw4bl1LGPky8u6sR",
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116945262,
+		"modifiedTime": 1776116945262,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "W168NtoBuDKOP9HT",
+	"sort": 0,
+	"_key": "!actors!W168NtoBuDKOP9HT"
+}

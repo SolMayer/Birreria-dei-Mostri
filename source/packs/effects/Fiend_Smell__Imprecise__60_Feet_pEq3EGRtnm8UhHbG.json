@@ -1,0 +1,60 @@
+{
+	"type": "action",
+	"name": "Fiend Smell (Imprecise) 60 Feet",
+	"system": {
+		"actionType": {
+			"value": "passive"
+		},
+		"description": {
+			"value": "<p>The creature can smell the presence of fiends within 60 feet of them as an imprecise sense.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"_migration": {
+			"version": 0.955,
+			"previous": {
+				"schema": null,
+				"foundry": "13.351",
+				"system": "7.12.2"
+			}
+		},
+		"actions": {
+			"value": null
+		},
+		"category": "interaction",
+		"deathNote": false
+	},
+	"effects": [],
+	"img": "systems/pf2e/icons/actions/Passive.webp",
+	"folder": "GtaOl5AS00gLPzbh",
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776328523059,
+		"modifiedTime": 1776328689991,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"_id": "pEq3EGRtnm8UhHbG",
+	"sort": 100000,
+	"_key": "!items!pEq3EGRtnm8UhHbG"
+}

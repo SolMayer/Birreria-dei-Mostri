@@ -1,0 +1,91 @@
+{
+	"folder": "z8MbwXKgnZ9PeKjX",
+	"name": "Effect: Kikimore Queen's Aggressive Pheromone",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.i1FmuXFMswqzmw46.Item.mUPw5PX8R5keszmL]</p><hr /><p>The fascinated creature has a +2 Status to all its attack rolls against creatures below their maximum hit points.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "RollOption",
+				"option": "queen-pheromone",
+				"toggleable": true,
+				"label": "target is below its maximum hit points"
+			},
+			{
+				"key": "FlatModifier",
+				"selector": [
+					"attack-roll"
+				],
+				"value": 2,
+				"type": "status",
+				"predicate": [
+					"queen-pheromone"
+				]
+			},
+			{
+				"key": "GrantItem",
+				"uuid": "Compendium.pf2e.conditionitems.Item.AdPVz7rbaVSRxHFg",
+				"allowDuplicate": false
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 1
+		},
+		"duration": {
+			"value": -1,
+			"unit": "unlimited",
+			"expiry": null,
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"img": "icons/magic/air/wind-tornado-cyclone-purple-pink.webp",
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Effects.Item.1L4QqZYaxHlABjnO",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116997197,
+		"modifiedTime": 1776117310315,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "2Zm3X0d3hst9EmIJ",
+	"sort": 0,
+	"_key": "!items!2Zm3X0d3hst9EmIJ"
+}

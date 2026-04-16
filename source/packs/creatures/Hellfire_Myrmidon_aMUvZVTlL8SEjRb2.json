@@ -1,0 +1,670 @@
+{
+	"folder": "hqIrVWSUxA1FCXwI",
+	"name": "Hellfire Myrmidon",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 1,
+		"width": 1,
+		"name": "Hellfire Myrmidon",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": true,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 155,
+				"temp": 0,
+				"max": 155,
+				"details": ""
+			},
+			"ac": {
+				"value": 28,
+				"details": ""
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 25,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"immunities": [
+				{
+					"type": "fire",
+					"exceptions": []
+				},
+				{
+					"type": "paralyzed",
+					"exceptions": []
+				},
+				{
+					"type": "poison",
+					"exceptions": []
+				}
+			],
+			"resistances": [
+				{
+					"type": "cold",
+					"value": 6,
+					"exceptions": [],
+					"doubleVs": []
+				},
+				{
+					"type": "physical",
+					"value": 6,
+					"exceptions": [
+						"magical"
+					],
+					"doubleVs": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [
+					"diabolic",
+					"pyric"
+				],
+				"details": ""
+			},
+			"level": {
+				"value": 9
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": {
+				"schema": 0.954,
+				"foundry": "13.351",
+				"system": "7.10.0"
+			}
+		},
+		"abilities": {
+			"str": {
+				"mod": 6
+			},
+			"dex": {
+				"mod": 3
+			},
+			"con": {
+				"mod": 4
+			},
+			"int": {
+				"mod": 3
+			},
+			"wis": {
+				"mod": 3
+			},
+			"cha": {
+				"mod": 3
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 18,
+			"senses": [
+				{
+					"type": "darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 21,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 18,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 15,
+				"saveDetail": ""
+			}
+		},
+		"skills": {},
+		"traits": {
+			"value": [
+				"elemental",
+				"fire"
+			],
+			"rarity": "common",
+			"size": {
+				"value": "med"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Reaction.webp",
+			"name": "Reactive Strike",
+			"system": {
+				"actionType": {
+					"value": "reaction"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "reactive-strike",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.10.0"
+					}
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 200000,
+			"flags": {},
+			"_id": "mUL2ilMmwaQggU7J",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!aMUvZVTlL8SEjRb2.mUL2ilMmwaQggU7J"
+		},
+		{
+			"type": "action",
+			"name": "Illumination",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>a hellfire myrmidon sheds bright light in a 20-foot emanation like a torch and dim light for another 20 foot</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "TokenLight",
+						"value": {
+							"dim": 40,
+							"bright": 20,
+							"alpha": 0.25,
+							"color": "#784f08",
+							"animation": {
+								"type": "flame",
+								"speed": 3,
+								"intensity": 4
+							}
+						}
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"light"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.10.0"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "OJg7uKTgzZsMOYCc",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 200000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!aMUvZVTlL8SEjRb2.OJg7uKTgzZsMOYCc"
+		},
+		{
+			"type": "action",
+			"name": "Death Burst",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>When the hellfire myrmidon is slain, it explodes, dealing @Damage[5d6[fire],5d6[spirit]] damage to all creatures in a @Template[emanation|distance:20] (@Check[reflex|dc:25|basic] save). Any creature that is slain by this ability is resurrected as a shade after [[/gmr 1d4 #Duration]]{1d4 hours}.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"fire"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.10.0"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": true
+			},
+			"effects": [],
+			"_id": "3UgTmggloEl8qdlU",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 100000,
+			"flags": {
+				"region-attacher": {
+					"attachRegionToTemplate": false
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!aMUvZVTlL8SEjRb2.3UgTmggloEl8qdlU"
+		},
+		{
+			"type": "action",
+			"name": "Water Susceptibility",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>If a hellfire myrmidon moves in 1 foot of water, it takes @Damage[3d6[cold]] damage. The hellfire myrmidon doesn't considers the result of any saving throw as one degree better against an incapacitation effect that has also the water trait</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "AdjustDegreeOfSuccess",
+						"selector": [
+							"fortitude",
+							"reflex",
+							"will"
+						],
+						"adjustment": {
+							"all": "one-degree-worse"
+						},
+						"predicate": [
+							"item:trait:incapacitation",
+							"item:trait:water"
+						]
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.10.0"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "rhv1aA8o0cpxk7p8",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 300000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!aMUvZVTlL8SEjRb2.rhv1aA8o0cpxk7p8"
+		},
+		{
+			"type": "melee",
+			"name": "Scimitar",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.10.0"
+					}
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"fire",
+						"forceful",
+						"magical",
+						"sweep"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"HRQnOUwntXXV1fwf": {
+						"damage": "1d6+15",
+						"damageType": "slashing",
+						"category": null
+					},
+					"IpHR2Xs7enAuxYac": {
+						"damage": "1d10",
+						"damageType": "fire",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 21
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "jBvdmAryef6RW0Uu",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!aMUvZVTlL8SEjRb2.jBvdmAryef6RW0Uu"
+		},
+		{
+			"type": "action",
+			"name": "Hellfire Strikes",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The Hellfire Myrmidon attempts Three Strikes against a single Creature with a -2 circumstance malus to its attack roll, combining the damage of all Strikes and applies resistance and weaknesses only once. If a creature is slain by this Strike, theiy'll resurrect as a shade after [[/gmr 1d4 #Duration]]{1d4 hour}. This counts as three attacks for the mulitple attack penalty but the penalty doesn't applies until the hellfire myrmidon has made all Strikes. The Hellfire Myrmidon can't use Hellfire Strikes again for [[/gmr 1d6 #Duration]]{1d6 rounds}.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.10.0"
+					}
+				},
+				"actions": {
+					"value": 3
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "aAOvkaIRzzwYfm4O",
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/ThreeActions.webp",
+			"folder": null,
+			"sort": 100000,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!aMUvZVTlL8SEjRb2.aAOvkaIRzzwYfm4O"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.dwJB9q3x9aiqh1mA",
+		"duplicateSource": "Actor.yw4bl1LGPky8u6sR",
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116945262,
+		"modifiedTime": 1776116945262,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "aMUvZVTlL8SEjRb2",
+	"sort": 0,
+	"_key": "!actors!aMUvZVTlL8SEjRb2"
+}

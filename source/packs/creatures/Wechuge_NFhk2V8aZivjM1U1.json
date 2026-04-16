@@ -1,0 +1,897 @@
+{
+	"folder": "hqIrVWSUxA1FCXwI",
+	"name": "Wechuge",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"splatter": {
+				"bloodColor": ""
+			},
+			"wall-height": {
+				"tokenHeight": 0
+			},
+			"LocknKey": {
+				"LPFormulaFlag": "",
+				"LPFormulaOverrideFlag": false,
+				"LBFormulaFlag": "",
+				"LBFormulaOverrideFlag": false,
+				"PickPocketFormulaFlag": "",
+				"PickPocketFormulaOverrideFlag": false,
+				"LootFormulaFlag": "",
+				"PickPocketDCFlag": null,
+				"MATTTriggerTileFlag": "",
+				"MATTTriggerConditionsFlag": {
+					"LockuseKey": "never",
+					"LockusePasskey": "never",
+					"LockusePick": "never",
+					"LockuseBreak": "never",
+					"LockuseFree": "never",
+					"UsePickPocket": "never"
+				}
+			},
+			"pf2e-visioner": {
+				"coverOverride": "auto",
+				"encounterMasterTokenId": "",
+				"visionMasterTokenId": ""
+			},
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 2,
+		"width": 2,
+		"name": "Wechuge",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 0,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 154,
+				"temp": 0,
+				"max": 154,
+				"details": ""
+			},
+			"ac": {
+				"value": 24,
+				"details": ""
+			},
+			"allSaves": {
+				"value": "+1 Status to All Saves vs. Magic"
+			},
+			"speed": {
+				"value": 35,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"immunities": [
+				{
+					"type": "cold",
+					"exceptions": []
+				}
+			],
+			"weaknesses": [
+				{
+					"type": "cold-iron",
+					"value": 5,
+					"exceptions": []
+				},
+				{
+					"type": "holy",
+					"value": 10,
+					"exceptions": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [
+					"chthonian"
+				],
+				"details": ""
+			},
+			"level": {
+				"value": 7
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": {
+				"schema": null,
+				"foundry": "13.351",
+				"system": "7.11.3"
+			}
+		},
+		"abilities": {
+			"str": {
+				"mod": 6
+			},
+			"dex": {
+				"mod": 2
+			},
+			"con": {
+				"mod": 4
+			},
+			"int": {
+				"mod": 2
+			},
+			"wis": {
+				"mod": 2
+			},
+			"cha": {
+				"mod": 2
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 12,
+			"senses": [
+				{
+					"type": "darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 18,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 15,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 12,
+				"saveDetail": ""
+			}
+		},
+		"skills": {},
+		"traits": {
+			"value": [
+				"demon",
+				"fiend",
+				"unholy"
+			],
+			"rarity": "common",
+			"size": {
+				"value": "lg"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"name": "Slam",
+			"type": "melee",
+			"system": {
+				"damageRolls": {
+					"strikeDamageID": {
+						"damage": "2d10+9",
+						"damageType": "bludgeoning",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 18
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"deadly-d6",
+						"magical",
+						"reach-10",
+						"unarmed",
+						"unholy"
+					],
+					"config": {}
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": null,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"action": "strike",
+				"area": null,
+				"attackEffects": {
+					"value": []
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "O6BKDLUDM5aMDzfP",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!NFhk2V8aZivjM1U1.O6BKDLUDM5aMDzfP"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "+1 Status to All Saves vs. Magic",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "FlatModifier",
+						"predicate": [
+							"item:magical"
+						],
+						"selector": "saving-throw",
+						"type": "status",
+						"value": 1
+					}
+				],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "1-status-to-all-saves-vs-magic",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.kquBnQ0kObZztnBc",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "0pplf59zJ7Wjm6hW",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!NFhk2V8aZivjM1U1.0pplf59zJ7Wjm6hW"
+		},
+		{
+			"type": "action",
+			"name": "Bravery",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"description": {
+					"value": "<p>When the wechuge rolls a success on a Will save against a fear effect, it gets a critical success instead. In addition, anytime the wechuge gains the frightened condition, reduce its value by 1.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [
+					{
+						"key": "AdjustDegreeOfSuccess",
+						"adjustment": {
+							"success": "one-degree-better"
+						},
+						"selector": "will",
+						"predicate": [
+							"item:trait:fear"
+						]
+					}
+				],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "WeHk0BFmUiGhcqyP",
+			"img": "systems/pf2e/icons/actions/Passive.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!NFhk2V8aZivjM1U1.WeHk0BFmUiGhcqyP"
+		},
+		{
+			"type": "melee",
+			"name": "Rock Throw",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"deadly-d6",
+						"magical",
+						"propulsive",
+						"unholy"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"4vSoe7668Qf1Km4N": {
+						"damage": "2d12+9",
+						"damageType": "bludgeoning",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 13
+				},
+				"attackEffects": {
+					"value": []
+				},
+				"range": {
+					"increment": 60,
+					"max": null
+				},
+				"subjectToMAP": true
+			},
+			"_id": "NI3efu2QGwrnfVci",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!NFhk2V8aZivjM1U1.NI3efu2QGwrnfVci"
+		},
+		{
+			"type": "action",
+			"name": "Grasp Object",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>the wechuge uproots a near tree, pick up a boulder or similar large object, wielding it as a weapon.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"manipulate"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "aNjBA4Hcv2G0s6pO",
+			"img": "systems/pf2e/icons/actions/OneAction.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!NFhk2V8aZivjM1U1.aNjBA4Hcv2G0s6pO"
+		},
+		{
+			"type": "action",
+			"name": "Intimidating Roar",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p>The wechuge roars, intimidating every creature @Template[emanation|distance:30]{within 30 feet}, who must attempt at a @Check[will|dc:22] save. Regardless of the result, the wechuge can't use Intimidating Roar for 1 minute.</p><hr /><p><strong>Critical Success</strong> The creature is unaffected.</p><p><strong>Success</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 1}.</p><p><strong>Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 2}.</p><p><strong>Critical Failure</strong> The creature is @UUID[Compendium.pf2e.conditionitems.Item.TBSHQspnbcqxsmjL]{Frightened 3} and @UUID[Compendium.pf2e.conditionitems.Item.sDPxOjQ9kx2RZE8D]{Fleeing} for 1 round.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"auditory",
+						"emotion",
+						"fear",
+						"mental"
+					]
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "sPwaTW8q2j3E7x7T",
+			"img": "systems/pf2e/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {
+				"region-attacher": {
+					"attachRegionToTemplate": false
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!NFhk2V8aZivjM1U1.sPwaTW8q2j3E7x7T"
+		},
+		{
+			"type": "action",
+			"name": "Reckless",
+			"system": {
+				"actionType": {
+					"value": "free"
+				},
+				"description": {
+					"value": "<p><strong>Trigger</strong> the wechuge's turn beings;</p><hr /><p><strong>Effect</strong> the wechuga abbandon any precaution, focusing on its attack. Until the start of its next turn, the Wechuge gains a +2 status to all its attacks, but is considered @UUID[Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg]{Off-Guard} until the start of its next turn.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "offensive",
+				"deathNote": false,
+				"selfEffect": {
+					"uuid": "Compendium.monster-homebrewery.effects.Item.5LbPmtS5tDMqGjOC",
+					"name": "Effect: Reckless"
+				}
+			},
+			"effects": [],
+			"_id": "5m4iMDX9Um9FjHl7",
+			"img": "systems/pf2e/icons/actions/FreeAction.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {
+				"pf2e": {
+					"itemGrants": {
+						"offGuard": {
+							"id": "Uh2eMUC3u90sIDod",
+							"onDelete": "detach"
+						}
+					}
+				}
+			},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": "he3UaLGz9ZNQy3ON",
+				"modifiedTime": 1776117061293
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!NFhk2V8aZivjM1U1.5m4iMDX9Um9FjHl7"
+		},
+		{
+			"type": "action",
+			"name": "Tree Smash",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"description": {
+					"value": "<p><strong>Requirements</strong> the wechuge is wielding a tree it has uprooted</p><hr /><p> the Wechuge slams the tree in a @Template[cone|distance:15], dealing @Damage[8d6[bludgeoning]] damage and breaking the tree in little splinters (@Check[reflex|dc:22|basic] save). Creatures who critically fails also takes @Damage[2d6[bleed,persistent]] damage from the splinters.</p><p></p>",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.955,
+						"foundry": "13.351",
+						"system": "7.11.3"
+					}
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"deathNote": false
+			},
+			"effects": [],
+			"_id": "a4ntrfp8kRNs4EAo",
+			"img": "systems/pf2e/icons/actions/TwoActions.webp",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!NFhk2V8aZivjM1U1.a4ntrfp8kRNs4EAo"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/conditions/off-guard.webp",
+			"name": "Off-Guard",
+			"system": {
+				"description": {
+					"value": "<p>You're distracted or otherwise unable to focus your full attention on defense. You take a –2 circumstance penalty to AC. Some effects give you the off-guard condition only to certain creatures or against certain attacks. Others—especially conditions—can make you off-guard against everything. If a rule doesn't specify that the condition applies only to certain circumstances, it applies to all of them, such as \"The target is off-guard.\"</p>",
+					"gm": ""
+				},
+				"group": null,
+				"overrides": [],
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Player Core",
+					"authors": ""
+				},
+				"references": {
+					"children": [],
+					"overriddenBy": [],
+					"overrides": [],
+					"parent": null
+				},
+				"rules": [
+					{
+						"key": "FlatModifier",
+						"selector": "ac",
+						"slug": "off-guard",
+						"type": "circumstance",
+						"value": -2
+					}
+				],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"value": {
+					"isValued": false,
+					"value": null
+				},
+				"slug": "off-guard",
+				"_migration": {
+					"version": 0.955,
+					"previous": null
+				},
+				"fromSpell": false,
+				"persistent": null
+			},
+			"type": "condition",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.conditionitems.Item.AJh5ex99aV6VTggg",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {
+				"pf2e": {
+					"grantedBy": {
+						"id": "5m4iMDX9Um9FjHl7",
+						"onDelete": "cascade"
+					}
+				}
+			},
+			"_id": "Uh2eMUC3u90sIDod",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!NFhk2V8aZivjM1U1.Uh2eMUC3u90sIDod"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.XhXXK5vh3vHKL0Xr",
+		"duplicateSource": "Actor.yw4bl1LGPky8u6sR",
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116945262,
+		"modifiedTime": 1776116945262,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "NFhk2V8aZivjM1U1",
+	"sort": 0,
+	"_key": "!actors!NFhk2V8aZivjM1U1"
+}

@@ -1,0 +1,91 @@
+{
+	"name": "Effect: Ice Shield",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.eDNWwABmPpYwLKgX.Item.1GSo3A7Jc9R06Euj]</p><hr /><p>The exonid protector gains a +2 circumstance bonus to its AC until the end of its next turn. While its shield is on, the exonid protector has resistance 5 to fire, and its speeds are reduced to 10 feet.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "FlatModifier",
+				"selector": [
+					"ac"
+				],
+				"value": 2,
+				"type": "circumstance"
+			},
+			{
+				"key": "Resistance",
+				"type": [
+					"fire"
+				],
+				"value": 5
+			},
+			{
+				"key": "FlatModifier",
+				"selector": [
+					"all-speeds"
+				],
+				"value": -20
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 1
+		},
+		"duration": {
+			"value": 1,
+			"unit": "rounds",
+			"expiry": "turn-end",
+			"sustained": true
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"img": "icons/magic/water/snowflake-ice-purple.webp",
+	"folder": "XejFJELhWrSrBMW6",
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Effects.Item.xiSAwZqCNfCA322z",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116994035,
+		"modifiedTime": 1776117092355,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "1Ze3KUYGhXjPsjD4",
+	"sort": 0,
+	"_key": "!items!1Ze3KUYGhXjPsjD4"
+}
