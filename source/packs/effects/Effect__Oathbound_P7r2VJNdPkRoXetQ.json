@@ -1,0 +1,88 @@
+{
+	"folder": "GtaOl5AS00gLPzbh",
+	"name": "Effect: Oathbound",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.sYuJRLSa6AHr04NU.Item.PM370gq6OOp47OGj]</p><hr /><p>The affected creature has a +1 Status to all its SSaves against fear and a +1 Status to its attack rolls as long as they mantain their oath.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "FlatModifier",
+				"selector": [
+					"saving-throw"
+				],
+				"value": 1,
+				"type": "status",
+				"predicate": [
+					"fear"
+				]
+			},
+			{
+				"key": "FlatModifier",
+				"selector": [
+					"attack-roll"
+				],
+				"value": 1,
+				"type": "status"
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 1
+		},
+		"duration": {
+			"value": -1,
+			"unit": "unlimited",
+			"expiry": null,
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"_id": "P7r2VJNdPkRoXetQ",
+	"img": "icons/magic/holy/chalice-glowing-yellow-blue.webp",
+	"sort": 0,
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776327233764,
+		"modifiedTime": 1776329975627,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"_key": "!items!P7r2VJNdPkRoXetQ"
+}

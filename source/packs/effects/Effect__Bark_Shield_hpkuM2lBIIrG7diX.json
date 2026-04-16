@@ -1,0 +1,77 @@
+{
+	"name": "Effect: Bark Shield",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p>Granted by: @UUID[Compendium.monster-homebrewery.creatures.Actor.3osIpZjJddsANY8K.Item.wHSGUrvsbg2GAXHN]{Bark Shield}</p><hr /><p>The bark strider or its rider gains a +2 circumstance bonus to its AC against the triggering attack.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "FlatModifier",
+				"selector": [
+					"ac"
+				],
+				"value": "+2",
+				"type": "circumstance"
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 0
+		},
+		"duration": {
+			"value": -1,
+			"unit": "unlimited",
+			"expiry": null,
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"img": "icons/magic/nature/barrier-shield-wood-vines.webp",
+	"folder": "EcyCXdBNYzzWXYBC",
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Effects.Item.dKvEiPOfkyySd5MN",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116992897,
+		"modifiedTime": 1776117208853,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "hpkuM2lBIIrG7diX",
+	"sort": 0,
+	"_key": "!items!hpkuM2lBIIrG7diX"
+}

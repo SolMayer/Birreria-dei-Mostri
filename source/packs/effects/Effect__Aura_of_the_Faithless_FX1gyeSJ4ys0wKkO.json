@@ -1,0 +1,80 @@
+{
+	"folder": "4RDKm94yFy95g8Or",
+	"name": "Effect: Aura of the Faithless",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.8vur8IHulhN4u8IO.Item.hpSLYG2Hh4zx36J3]</p><hr /><p>Undead creatures that start their turn inside the aura gains a +1 Status to all Saves vs. Divine Effects and spells.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "FlatModifier",
+				"value": 1,
+				"type": "status",
+				"selector": [
+					"saving-throw"
+				],
+				"predicate": [
+					"item:trait:divine"
+				]
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 1
+		},
+		"duration": {
+			"value": -1,
+			"unit": "unlimited",
+			"expiry": null,
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"img": "icons/magic/unholy/silhouette-light-fire-blue.webp",
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Effects.Item.JhVnczusSWut6qIE",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116995949,
+		"modifiedTime": 1776117235740,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "FX1gyeSJ4ys0wKkO",
+	"sort": 0,
+	"_key": "!items!FX1gyeSJ4ys0wKkO"
+}

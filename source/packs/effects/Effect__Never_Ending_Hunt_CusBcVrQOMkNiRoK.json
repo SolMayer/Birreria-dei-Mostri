@@ -1,0 +1,73 @@
+{
+	"folder": "GtaOl5AS00gLPzbh",
+	"name": "Effect: Never-Ending Hunt",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.w75vfNjWS90rsDtH.Item.VT9sKJSZhApQoxk7]</p><hr /><p>The animal gains Fiend Smell as an imprecise sense of 60 feet and is considered @UUID[Compendium.pf2e.conditionitems.v44P3WUcU1j0115l]{Helpful} towards the sacred hunter and @UUID[Compendium.pf2e.conditionitems.ud7gTLwPeklzYSXG]{Hostile} against any fiend they can smell who isn't an ally of the sacred hunter.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "GrantItem",
+				"uuid": "Compendium.monster-homebrewery.effects.Item.pEq3EGRtnm8UhHbG"
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 9
+		},
+		"duration": {
+			"value": -1,
+			"unit": "unlimited",
+			"expiry": null,
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"_id": "CusBcVrQOMkNiRoK",
+	"img": "icons/magic/nature/wolf-paw-glow-large-green.webp",
+	"sort": 0,
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776328535277,
+		"modifiedTime": 1776330108029,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"_key": "!items!CusBcVrQOMkNiRoK"
+}

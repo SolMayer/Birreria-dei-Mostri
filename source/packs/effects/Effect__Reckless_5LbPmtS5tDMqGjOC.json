@@ -1,0 +1,68 @@
+{
+	"folder": "HYcBMQ0DstOJYcIE",
+	"name": "Effect: Reckless",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.NFhk2V8aZivjM1U1.Item.5m4iMDX9Um9FjHl7]</p><hr /><p>The Wechuge gains a +2 status to all its attack rolls, but is considered @UUID[Compendium.pf2e.conditionitems.AJh5ex99aV6VTggg]{Off-Guard}.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 1
+		},
+		"duration": {
+			"value": 1,
+			"unit": "rounds",
+			"expiry": "turn-start",
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"img": "icons/skills/wounds/injury-face-impact-orange.webp",
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Effects.Item.3EPu4wyHqp8ZDGpR",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116990529,
+		"modifiedTime": 1776117055156,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "5LbPmtS5tDMqGjOC",
+	"sort": 0,
+	"_key": "!items!5LbPmtS5tDMqGjOC"
+}

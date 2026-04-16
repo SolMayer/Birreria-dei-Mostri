@@ -1,0 +1,1019 @@
+{
+	"folder": "hqIrVWSUxA1FCXwI",
+	"name": "Aleadar, The Hell Hydra",
+	"type": "npc",
+	"prototypeToken": {
+		"flags": {
+			"pf2e": {
+				"linkToActorSize": true,
+				"autoscale": true
+			}
+		},
+		"height": 4,
+		"width": 4,
+		"name": "Aleadar, The Hell Hydra",
+		"displayName": 20,
+		"actorLink": false,
+		"texture": {
+			"src": "systems/pf2e/icons/default-icons/npc.svg",
+			"anchorX": 0.5,
+			"anchorY": 0.5,
+			"offsetX": 0,
+			"offsetY": 0,
+			"fit": "contain",
+			"scaleX": 1,
+			"scaleY": 1,
+			"rotation": 0,
+			"tint": "#ffffff",
+			"alphaThreshold": 0.75
+		},
+		"lockRotation": true,
+		"rotation": 0,
+		"alpha": 1,
+		"disposition": -1,
+		"displayBars": 20,
+		"bar1": {
+			"attribute": "attributes.hp"
+		},
+		"bar2": {
+			"attribute": null
+		},
+		"light": {
+			"negative": false,
+			"priority": 0,
+			"alpha": 0.5,
+			"angle": 360,
+			"bright": 0,
+			"color": null,
+			"coloration": 1,
+			"dim": 0,
+			"attenuation": 0.5,
+			"luminosity": 0.5,
+			"saturation": 0,
+			"contrast": 0,
+			"shadows": 0,
+			"animation": {
+				"type": null,
+				"speed": 5,
+				"intensity": 5,
+				"reverse": false
+			},
+			"darkness": {
+				"min": 0,
+				"max": 1
+			}
+		},
+		"sight": {
+			"enabled": false,
+			"range": 0,
+			"angle": 360,
+			"visionMode": "basic",
+			"color": null,
+			"attenuation": 0.1,
+			"brightness": 0,
+			"saturation": 0,
+			"contrast": 0
+		},
+		"detectionModes": [],
+		"occludable": {
+			"radius": 0
+		},
+		"ring": {
+			"enabled": false,
+			"colors": {
+				"ring": null,
+				"background": null
+			},
+			"effects": 1,
+			"subject": {
+				"scale": 1,
+				"texture": null
+			}
+		},
+		"turnMarker": {
+			"mode": 1,
+			"animation": null,
+			"src": null,
+			"disposition": false
+		},
+		"movementAction": null,
+		"randomImg": false,
+		"appendNumber": false,
+		"prependAdjective": false
+	},
+	"effects": [],
+	"system": {
+		"attributes": {
+			"hp": {
+				"value": 251,
+				"temp": 0,
+				"max": 251,
+				"details": "hydra regeneration"
+			},
+			"ac": {
+				"value": 32,
+				"details": "all-around vision"
+			},
+			"allSaves": {
+				"value": ""
+			},
+			"speed": {
+				"value": 25,
+				"otherSpeeds": [],
+				"details": ""
+			},
+			"weaknesses": [
+				{
+					"type": "holy",
+					"value": 9,
+					"exceptions": []
+				}
+			],
+			"resistances": [
+				{
+					"type": "fire",
+					"value": 9,
+					"exceptions": [],
+					"doubleVs": []
+				}
+			]
+		},
+		"initiative": {
+			"statistic": "perception"
+		},
+		"details": {
+			"languages": {
+				"value": [
+					"chthonian",
+					"common",
+					"diabolic"
+				],
+				"details": "Doesn't Talk"
+			},
+			"level": {
+				"value": 12
+			},
+			"blurb": "",
+			"publicNotes": "",
+			"privateNotes": "",
+			"publication": {
+				"title": "Birreria dei Mostri",
+				"authors": "Sól",
+				"license": "ORC",
+				"remaster": true
+			},
+			"license": {
+				"orc": true
+			}
+		},
+		"resources": {},
+		"_migration": {
+			"version": 0.955,
+			"previous": {
+				"schema": 0.954,
+				"foundry": "13.351",
+				"system": "7.12.2"
+			}
+		},
+		"abilities": {
+			"str": {
+				"mod": 7
+			},
+			"dex": {
+				"mod": 4
+			},
+			"con": {
+				"mod": 4
+			},
+			"int": {
+				"mod": 3
+			},
+			"wis": {
+				"mod": 4
+			},
+			"cha": {
+				"mod": 3
+			}
+		},
+		"perception": {
+			"details": "",
+			"mod": 19,
+			"senses": [
+				{
+					"type": "darkvision"
+				}
+			],
+			"vision": true
+		},
+		"saves": {
+			"fortitude": {
+				"value": 25,
+				"saveDetail": ""
+			},
+			"reflex": {
+				"value": 18,
+				"saveDetail": ""
+			},
+			"will": {
+				"value": 22,
+				"saveDetail": ""
+			}
+		},
+		"skills": {
+			"athletics": {
+				"base": 22,
+				"special": []
+			}
+		},
+		"traits": {
+			"value": [
+				"beast",
+				"fiend",
+				"unholy"
+			],
+			"rarity": "unique",
+			"size": {
+				"value": "grg"
+			}
+		}
+	},
+	"img": "systems/pf2e/icons/default-icons/npc.svg",
+	"items": [
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Darkvision",
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "interaction",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Darkvision]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "darkvision",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.qCCLZhnp2HhP3Ex6",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 350000,
+			"flags": {},
+			"_id": "CmQuNFvsv7FHpGMm",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.CmQuNFvsv7FHpGMm"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Reactive Heads",
+			"sort": 600000,
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>Aleadar gains an extra reaction per round for each of its heads beyond the first, which it can use only to make Reactive Strikes. It can't use more than 1 reaction on the same triggering action, even if a creature leaves several squares within its reach, and Aleadar must use a different head for each Reactive Strike it makes. Whenever one of Aleadar's heads is severed, Aleadar loses 1 of its extra reactions per round.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "",
+					"authors": ""
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Actor.46ZCMzO2QN8UKLbP.Item.pSKjTPdO8e9KO9LI",
+				"duplicateSource": "Actor.46ZCMzO2QN8UKLbP.Item.pSKjTPdO8e9KO9LI",
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"flags": {},
+			"_id": "hbgkbpWrZejVI0Ki",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.hbgkbpWrZejVI0Ki"
+		},
+		{
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.lR9R5Vld8Eu2Dha5",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Hydra Regeneration",
+			"sort": 400000,
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"deathNote": true,
+				"description": {
+					"value": "<p>The hydra has regeneration equal to 3 x the number of heads it has. If a hydra's body is missing any heads and the remaining stumps have not been cauterized, the hydra attempts a @Check[fortitude|immutable:true|dc:32] save after it regains Hit Points from regeneration. On a success, one uncauterized stump regrows two heads; on a critical success, two uncauterized stumps regrow into two heads each. The hydra can never grow more than double the number of heads it ordinarily has. The hydra's regeneration only fully deactivates if all its heads are severed and all stumps are cauterized, at which point it dies.</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.Regeneration]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"slug": "regeneration",
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				}
+			},
+			"type": "action",
+			"effects": [],
+			"folder": null,
+			"flags": {},
+			"_id": "k7ihKbiDlB4JH2G4",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.k7ihKbiDlB4JH2G4"
+		},
+		{
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.9qV49KjZujZnSp6w",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "All-Around Vision",
+			"sort": 300000,
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.AllAroundVision]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"key": "ActiveEffectLike",
+						"mode": "override",
+						"path": "system.attributes.flanking.flankable",
+						"value": false
+					}
+				],
+				"slug": "all-around-vision",
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				}
+			},
+			"type": "action",
+			"effects": [],
+			"folder": null,
+			"flags": {},
+			"_id": "sfEaSwSwzw8pxf1I",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.sfEaSwSwzw8pxf1I"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Passive.webp",
+			"name": "Head Regrowth",
+			"sort": 375000,
+			"system": {
+				"actionType": {
+					"value": "passive"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>Aleadar has seven heads. A creature can attempt to sever one of Adear's heads by specifically targeting it and dealing damage equal to the head's Hit Points. A head that is not completely severed returns to full Hit Points at the end of any creature's turn. Aleadar can regrow a severed head using Hydra Regeneration. A creature can prevent this regrowth by dealing acid or good damage to the stump, cauterizing it. Single-target acid or good effects need to be targeted at a specific stump, but effects that deal splash damage or affect areas covering the hydra's whole space cauterize all stumps if they deal acid or good damage. If the attack that severs a head deals any acid or good damage, the stump is cauterized instantly. If all seven heads are cauterized, Aleadar dies.</p><hr /><p><strong>Hydra Head</strong></p><ul><li><strong>Hit Points</strong> 39</li><li><strong>Immunities</strong> Area Damage</li><li><strong>Weaknesses</strong> Slashing 8</li></ul><p>@UUID[Compendium.pf2e.bestiary-effects.Item.uZJOdounIHaFDC1t]{Effect: Hydra Heads}</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "",
+					"authors": ""
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Actor.46ZCMzO2QN8UKLbP.Item.m2aEAnMnepSKN57G",
+				"duplicateSource": "Actor.46ZCMzO2QN8UKLbP.Item.m2aEAnMnepSKN57G",
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"flags": {},
+			"_id": "d3KaHC9NKPrhiOnT",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.d3KaHC9NKPrhiOnT"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/TwoActions.webp",
+			"name": "Focused Assault",
+			"sort": 350000,
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>Aleadar attacks a single target with its heads, overwhelming its foe with multiple attacks and leaving almost nowhere to dodge. Aleadar Strikes with its fangs. On a successful attack, the hydra deals damage from its fangs Strike to the target, plus an additional [[/r 1d6]] damage for every head it has beyond the first. On a failure (but not a critical failure), the hydra deals the damage from one fangs Strike to the target creature. This Strike counts as a number of attacks equal to the number of heads the hydra has toward the hydra's multiple attack penalty.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"domain": "damage",
+						"key": "RollOption",
+						"option": "focused-assault",
+						"toggleable": true,
+						"value": false
+					}
+				],
+				"slug": null,
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Actor.46ZCMzO2QN8UKLbP.Item.FGm1xbUPgE0BRiSf",
+				"duplicateSource": "Actor.46ZCMzO2QN8UKLbP.Item.FGm1xbUPgE0BRiSf",
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"flags": {},
+			"_id": "sE5xeU7l5Ph7KY7Q",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.sE5xeU7l5Ph7KY7Q"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/TwoActions.webp",
+			"name": "Storm of Jaws",
+			"sort": 900000,
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 2
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>The hydra makes a number of Strikes up to its number of heads, each against a different target. These attacks count toward the hydra's multiple attack penalty, but the multiple attack penalty doesn't increase until after the hydra makes all its attacks.</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "",
+					"authors": ""
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Actor.46ZCMzO2QN8UKLbP.Item.0L6qwj5JpEiwbnph",
+				"duplicateSource": "Actor.46ZCMzO2QN8UKLbP.Item.0L6qwj5JpEiwbnph",
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"flags": {},
+			"_id": "do0eVOUSybAVRLGl",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.do0eVOUSybAVRLGl"
+		},
+		{
+			"type": "melee",
+			"name": "Fangs",
+			"effects": [],
+			"system": {
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"description": {
+					"value": "",
+					"gm": ""
+				},
+				"publication": {
+					"title": "",
+					"authors": "",
+					"license": "OGL",
+					"remaster": false
+				},
+				"rules": [],
+				"slug": null,
+				"traits": {
+					"otherTags": [],
+					"value": [
+						"magical",
+						"reach-20",
+						"unarmed",
+						"unholy"
+					],
+					"config": {}
+				},
+				"action": "strike",
+				"area": null,
+				"damageRolls": {
+					"coczBtXjuX69dmSE": {
+						"damage": "3d8+12",
+						"damageType": "piercing",
+						"category": null
+					}
+				},
+				"bonus": {
+					"value": 26
+				},
+				"attackEffects": {
+					"value": [
+						"grab"
+					]
+				},
+				"range": null,
+				"subjectToMAP": true
+			},
+			"_id": "v1Hjokv3YqCI1Ecp",
+			"img": "systems/pf2e/icons/default-icons/melee.svg",
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_stats": {
+				"compendiumSource": null,
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.v1Hjokv3YqCI1Ecp"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/spells/summon-animal.webp",
+			"name": "Effect: Hydra Heads",
+			"system": {
+				"badge": {
+					"max": null,
+					"min": null,
+					"type": "counter",
+					"value": 7,
+					"labels": null,
+					"loop": false
+				},
+				"description": {
+					"value": "<p>The number of heads the hydra currently has.</p>",
+					"gm": ""
+				},
+				"duration": {
+					"expiry": null,
+					"sustained": false,
+					"unit": "unlimited",
+					"value": -1
+				},
+				"level": {
+					"value": 6
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [
+					{
+						"diceNumber": "@item.system.badge.value - 1",
+						"dieSize": "d6",
+						"key": "DamageDice",
+						"predicate": [
+							"focused-assault"
+						],
+						"selector": "strike-damage"
+					},
+					{
+						"key": "FastHealing",
+						"type": "regeneration",
+						"value": "@item.system.badge.value * 3"
+					}
+				],
+				"start": {
+					"value": -3492,
+					"initiative": null
+				},
+				"tokenIcon": {
+					"show": false
+				},
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "effect-hydra-heads",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"unidentified": false,
+				"fromSpell": false,
+				"context": {
+					"origin": {
+						"actor": "Actor.E1TIaiXzIaVafojY",
+						"token": null,
+						"item": "Actor.E1TIaiXzIaVafojY.Item.d3KaHC9NKPrhiOnT",
+						"spellcasting": null,
+						"rollOptions": []
+					},
+					"target": null,
+					"roll": null
+				}
+			},
+			"type": "effect",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-effects.Item.uZJOdounIHaFDC1t",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "PZZ90to2nUz1XXp3",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.PZZ90to2nUz1XXp3"
+		},
+		{
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.W7SbTykXrNwxDzJc",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/Reaction.webp",
+			"name": "Reactive Strike (See Reactive Heads)",
+			"sort": 700000,
+			"system": {
+				"actionType": {
+					"value": "reaction"
+				},
+				"actions": {
+					"value": null
+				},
+				"category": "defensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.ReactiveStrike]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"slug": "reactive-strike",
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				}
+			},
+			"type": "action",
+			"effects": [],
+			"folder": null,
+			"flags": {},
+			"_id": "4HKrJVoDkd2XpM3w",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.4HKrJVoDkd2XpM3w"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Swallow Whole",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>[Large], @Damage[(3d12+8)[bludgeoning]], Rupture 32</p><hr /><p>@Localize[PF2E.NPC.Abilities.Glossary.SwallowWhole]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [
+						"attack"
+					],
+					"otherTags": []
+				},
+				"slug": "swallow-whole",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				},
+				"deathNote": false
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.uJSseLa57HZYSMUu",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 1000000,
+			"flags": {},
+			"_id": "Miw66BQIxWlHhuZQ",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.Miw66BQIxWlHhuZQ"
+		},
+		{
+			"img": "https://assets.forge-vtt.com/bazaar/systems/pf2e/assets/icons/actions/OneAction.webp",
+			"name": "Grab",
+			"system": {
+				"actionType": {
+					"value": "action"
+				},
+				"actions": {
+					"value": 1
+				},
+				"category": "offensive",
+				"description": {
+					"value": "<p>@Localize[PF2E.NPC.Abilities.Glossary.Grab]</p>",
+					"gm": ""
+				},
+				"publication": {
+					"license": "ORC",
+					"remaster": true,
+					"title": "Pathfinder Monster Core",
+					"authors": ""
+				},
+				"rules": [],
+				"traits": {
+					"value": [],
+					"otherTags": []
+				},
+				"slug": "grab",
+				"_migration": {
+					"version": 0.955,
+					"previous": {
+						"schema": 0.954,
+						"foundry": "13.351",
+						"system": "7.12.2"
+					}
+				}
+			},
+			"type": "action",
+			"_stats": {
+				"compendiumSource": "Compendium.pf2e.bestiary-ability-glossary-srd.Item.Tkd8sH4pwFIPzqTr",
+				"duplicateSource": null,
+				"exportSource": null,
+				"coreVersion": "13.351",
+				"systemId": "pf2e",
+				"systemVersion": "7.12.2",
+				"lastModifiedBy": null
+			},
+			"effects": [],
+			"folder": null,
+			"sort": 0,
+			"flags": {},
+			"_id": "qbY6VwVkYcthc930",
+			"ownership": {
+				"default": 0
+			},
+			"_key": "!actors.items!kyYgrrMhzAdOqlc9.qbY6VwVkYcthc930"
+		}
+	],
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Creatures.Actor.uWFRc2i5KPyIgIEf",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116945262,
+		"modifiedTime": 1776116945262,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "kyYgrrMhzAdOqlc9",
+	"sort": 0,
+	"_key": "!actors!kyYgrrMhzAdOqlc9"
+}

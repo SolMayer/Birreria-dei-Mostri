@@ -1,0 +1,81 @@
+{
+	"name": "Effect: Primal Fury",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.s4wf4AM3Lu44akWb.Item.9ATpw4QmdiGIVheo]</p><hr /><p>The Gorebull gains a +2 status bonus to hit and he's @UUID[Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl]{Quickened}. The Gorebull can use this extra action only to [[/act step]], [[/act stride]] or Strike.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "GrantItem",
+				"uuid": "Compendium.pf2e.conditionitems.Item.nlCjDvLMf2EkV2dl"
+			},
+			{
+				"key": "FlatModifier",
+				"value": 2,
+				"type": "status",
+				"selector": [
+					"attack-roll"
+				]
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 3
+		},
+		"duration": {
+			"value": -1,
+			"unit": "unlimited",
+			"expiry": null,
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"img": "icons/magic/control/fear-fright-monster-green.webp",
+	"folder": "z8MbwXKgnZ9PeKjX",
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Effects.Item.boV8cNSRcfFDzwOe",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116997197,
+		"modifiedTime": 1776117381009,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "qJk6pU8Xc6xDJHvO",
+	"sort": 0,
+	"_key": "!items!qJk6pU8Xc6xDJHvO"
+}

@@ -1,0 +1,98 @@
+{
+	"folder": "x3w5JpbQCS4jdOn0",
+	"name": "Effect: Whispers of Wrath (Critical Failure)",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.Yo98ERYF6Dn0lQ7j.Item.EuKTCkMN0rIlr722]</p><hr /><p>The creature is @UUID[Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ]{confused }for 1 minute.</p><p>While confused, the creature gains the following effects:</p><ul><li><p>The creature deals 2 additional damage on melee Strikes. This additional damage is halved if the creature's weapon or unarmed attack is agile.</p></li><li><p>The creature can't use action with the concentrate trait unless they also have the rage trait. The creature can stille @UUID[Compendium.pf2e.actionspf2e.BlAOM2X92SI6HMtJ]{Seek} while raging.</p></li></ul>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "GrantItem",
+				"uuid": "Compendium.pf2e.conditionitems.Item.yblD8fOR1J8rDwEQ",
+				"allowDuplicate": false
+			},
+			{
+				"key": "FlatModifier",
+				"selector": [
+					"strike-damage"
+				],
+				"value": 2,
+				"type": "status",
+				"predicate": [
+					{
+						"not": "item:ranged"
+					}
+				]
+			},
+			{
+				"key": "AdjustModifier",
+				"mode": "multiply",
+				"predicate": [
+					"item:trait:agile"
+				],
+				"priority": 95,
+				"selector": "strike-damage",
+				"slug": "whispers-of-wrath",
+				"value": 0.5
+			}
+		],
+		"slug": "effect-whispers-of-wrath",
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 1
+		},
+		"duration": {
+			"value": 1,
+			"unit": "minutes",
+			"expiry": "turn-end",
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"img": "icons/magic/control/control-influence-puppet.webp",
+	"flags": {},
+	"_stats": {
+		"compendiumSource": "Compendium.sol-homebrewery.Effects.Item.6xCa1JGExz9OxyfF",
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116998490,
+		"modifiedTime": 1776117424376,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"_id": "CcVP3fkM1VaWsiJj",
+	"sort": 0,
+	"_key": "!items!CcVP3fkM1VaWsiJj"
+}

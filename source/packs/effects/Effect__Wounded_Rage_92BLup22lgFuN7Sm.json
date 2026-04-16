@@ -1,0 +1,81 @@
+{
+	"folder": "GtaOl5AS00gLPzbh",
+	"name": "Effect: Wounded Rage",
+	"type": "effect",
+	"effects": [],
+	"system": {
+		"_migration": {
+			"version": 0.955,
+			"previous": null
+		},
+		"description": {
+			"value": "<p><strong>Granted By</strong>: @UUID[Compendium.monster-homebrewery.creatures.Actor.oQN9fuF1SbWWtrMe.Item.htZbPfjZbATn7NF9]</p><hr /><p>For 1 minute, the amarashi gains a + status to all melee Damage and 10 temporary hit points.</p>",
+			"gm": ""
+		},
+		"publication": {
+			"title": "",
+			"authors": "",
+			"license": "OGL",
+			"remaster": false
+		},
+		"rules": [
+			{
+				"key": "FlatModifier",
+				"selector": [
+					"melee-damage"
+				],
+				"value": 2,
+				"type": "status"
+			},
+			{
+				"key": "TempHP",
+				"value": 10
+			}
+		],
+		"slug": null,
+		"traits": {
+			"otherTags": [],
+			"value": []
+		},
+		"level": {
+			"value": 2
+		},
+		"duration": {
+			"value": 1,
+			"unit": "minutes",
+			"expiry": "turn-end",
+			"sustained": false
+		},
+		"tokenIcon": {
+			"show": true
+		},
+		"unidentified": false,
+		"start": {
+			"value": 0,
+			"initiative": null
+		},
+		"badge": null,
+		"fromSpell": false,
+		"context": null
+	},
+	"_id": "92BLup22lgFuN7Sm",
+	"img": "icons/creatures/abilities/lion-roar-yellow.webp",
+	"sort": 0,
+	"ownership": {
+		"default": 0,
+		"he3UaLGz9ZNQy3ON": 3
+	},
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776151970411,
+		"modifiedTime": 1776329883292,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"_key": "!items!92BLup22lgFuN7Sm"
+}

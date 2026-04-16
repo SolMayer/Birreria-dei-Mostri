@@ -1,0 +1,23 @@
+{
+	"type": "Actor",
+	"folder": null,
+	"name": "Corpus Angelus",
+	"color": "#cbbb80",
+	"sorting": "a",
+	"_id": "WxElBye6udKxlJSz",
+	"description": "",
+	"sort": 1000000,
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776329849089,
+		"modifiedTime": 1776329849673,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"_key": "!folders!WxElBye6udKxlJSz"
+}

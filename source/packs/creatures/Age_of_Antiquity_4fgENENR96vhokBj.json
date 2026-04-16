@@ -1,0 +1,23 @@
+{
+	"type": "Actor",
+	"folder": null,
+	"name": "Age of Antiquity",
+	"color": "#3f1313",
+	"sorting": "a",
+	"_id": "4fgENENR96vhokBj",
+	"description": "",
+	"sort": 100000,
+	"flags": {},
+	"_stats": {
+		"compendiumSource": null,
+		"duplicateSource": null,
+		"exportSource": null,
+		"coreVersion": "13.351",
+		"systemId": "pf2e",
+		"systemVersion": "7.12.2",
+		"createdTime": 1776116947389,
+		"modifiedTime": 1776118527202,
+		"lastModifiedBy": "he3UaLGz9ZNQy3ON"
+	},
+	"_key": "!folders!4fgENENR96vhokBj"
+}
