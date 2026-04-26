@@ -19,16 +19,27 @@
       "label": "Creatures",
       "path": "packs/creatures",
       "type": "Actor",
+      "system": "pf2e",
       "ownership": {
         "PLAYER": "OBSERVER",
         "ASSISTANT": "OWNER"
-      },
-      "system": "pf2e"
+      }
     },
     {
       "name": "effects",
       "label": "Effects",
       "path": "packs/effects",
+      "type": "Item",
+      "system": "pf2e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "abilities",
+      "label": "Abilities",
+      "path": "packs/abilities",
       "type": "Item",
       "ownership": {
         "PLAYER": "OBSERVER",
@@ -37,15 +48,17 @@
       "system": "pf2e"
     }
   ],
-  "packFolders":[
+  "packFolders": [
     {
-      "name":"Birreria dei Mostri",
-      "sorting":"a",
-      "packs":[
+      "name": "Birreria dei Mostri",
+      "sorting": "a",
+      "packs": [
+        "abilities",
         "creatures",
         "effects"
       ],
-      "color":null
+      "color": null,
+      "folders": []
     }
   ]
 }
